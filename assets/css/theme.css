@@ -28,13 +28,13 @@ body {
 }
 
 a {
-  color: #07be94;
+  color: #326996;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #03a882;
+  color: #326996;
   text-decoration: underline;
 }
 
@@ -60,12 +60,12 @@ a:hover {
 
 /* Color systems */
 .bg-primary {
-  background-color: #00d9a5 !important;
+  background-color: #326996 !important;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #07be94 !important;
+  background-color: #326996 !important;
 }
 
 .bg-accent {
@@ -244,7 +244,7 @@ a.text-dark:focus {
 }
 
 .border-primary {
-  border-color: #00d9a5 !important;
+  border-color: #326996 !important;
 }
 
 .border-secondary {
@@ -289,7 +289,7 @@ a.text-dark:focus {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #07be94;
+  background-color: #326996;
   border-color: transparent;
 }
 
@@ -297,8 +297,8 @@ a.text-dark:focus {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #00d9a5;
-  border-color: #07be94;
+  background-color: #326996;
+  border-color: #326996;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -573,14 +573,14 @@ a.text-dark:focus {
 }
 
 .btn-outline-primary {
-  color: #00d9a5;
-  border-color: #00d9a5;
+  color: #326996;
+  border-color: #326996;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #00d9a5;
-  border-color: #00d9a5;
+  background-color: #326996;
+  border-color: #326996;
 }
 
 .btn-outline-primary:focus,
@@ -590,7 +590,7 @@ a.text-dark:focus {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-  color: #00d9a5;
+  color: #326996;
   background-color: transparent;
 }
 
@@ -598,8 +598,8 @@ a.text-dark:focus {
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #00d9a5;
-  border-color: #00d9a5;
+  background-color: #326996;
+  border-color: #326996;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
