@@ -286,12 +286,6 @@ a.text-dark:focus {
   background-color: #326996;
   border-color: transparent;
 }
-.btn-primary_2 {
-  color: #fff;
-  background-color: #326996;
-  border-color: transparent;
-  margin-left: 2.5rem;
-}
 
 .btn-primary.disabled,
 .btn-primary:disabled {
