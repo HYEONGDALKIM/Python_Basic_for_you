@@ -286,6 +286,12 @@ a.text-dark:focus {
   background-color: #326996;
   border-color: transparent;
 }
+.btn-primary_2 {
+  color: #fff;
+  background-color: #326996;
+  border-color: transparent;
+  margin-left: 2.5rem;
+}
 
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -1561,6 +1567,10 @@ a.text-dark:focus {
   box-shadow: 0 4px 12px rgba(154, 159, 151, 0.3);
 }
 
+.blog-details .post-title {
+  margin-bottom: 24px;
+  font-weight: 400;
+}
 .blog-details .post-title {
   margin-bottom: 24px;
   font-weight: 400;
