@@ -55,7 +55,8 @@ a:hover {
 }
 
 .text-xl {
-  font-size: 20px !important;
+  color: #326996;
+  font-size: 15px !important;
 }
 
 /* Color systems */
@@ -1377,7 +1378,7 @@ a.text-dark:focus {
   margin-top: 24px;
 }
 
-.card-doctor {
+.card-1 {
   display: block;
   margin: 15px auto;
   width: 100%;
@@ -1388,18 +1389,18 @@ a.text-dark:focus {
   overflow: hidden;
 }
 
-.card-doctor .text-xl {
+.card-1 .text-xl {
   font-weight: 500;
 }
 
-.card-doctor .header {
+.card-1 .header {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 325px;
   overflow: hidden;
 }
 
-.card-doctor .header::before {
+.card-1 .header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1411,11 +1412,11 @@ a.text-dark:focus {
   transition: opacity 0.2s linear;
 }
 
-.card-doctor:hover .header::before {
+.card-1:hover .header::before {
   opacity: 1;
 }
 
-.card-doctor .header .meta {
+.card-1 .header .meta {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1427,13 +1428,13 @@ a.text-dark:focus {
   transition: all 0.2s ease;
 }
 
-.card-doctor:hover .header .meta {
+.card-1:hover .header .meta {
   bottom: 15px;
   visibility: visible;
   opacity: 1;
 }
 
-.card-doctor .header .meta a {
+.card-1 .header .meta a {
   display: inline-block;
   margin: 3px;
   width: 40px;
@@ -1447,17 +1448,17 @@ a.text-dark:focus {
   transition: all 0.2s ease;
 }
 
-.card-doctor .header .meta a:hover {
+.card-1 .header .meta a:hover {
   text-decoration: none;
   background-color: #6e807a;
   color: #fff;
 }
 
-.card-doctor .header img {
+.card-1 .header img {
   width: 100%;
 }
 
-.card-doctor .body {
+.card-1 .body {
   padding: 15px 20px;
 }
 
@@ -1514,7 +1515,7 @@ a.text-dark:focus {
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
-  background-color: #4e5afe;
+  background-color: #ff0000;
   color: #fff;
   border-radius: 40px;
 }
@@ -1531,7 +1532,7 @@ a.text-dark:focus {
 .card-blog .post-title:hover,
 .card-blog .post-title a:hover {
   text-decoration: none;
-  color: #07be94;
+  color: #003254;
 }
 
 .card-blog .site-info {
@@ -1805,19 +1806,19 @@ a.text-dark:focus {
 .page-footer {
   position: relative;
   display: block;
-  padding-top: 80px;
-  padding-bottom: 16px;
-  background-color: #2d3b38;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #003458;
   color: #fff;
 }
 
 .page-footer h5 {
-  font-weight: 500;
-  margin-bottom: 16px;
+  font-weight: 300;
+  margin-bottom: 0px;
 }
 
 .page-footer hr {
-  border-color: #4f5e5b;
+  border-color: #070707;
 }
 
 .footer-menu {
