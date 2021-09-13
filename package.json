@@ -1,0 +1,24 @@
+{
+  "name": "hyeongdalkim.github.io",
+  "version": "1.0.0",
+  "description": "졸업작품 Python Basics For you",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HYEONGDALKIM/HYEONGDALKIM.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HYEONGDALKIM/HYEONGDALKIM.github.io/issues"
+  },
+  "homepage": "https://github.com/HYEONGDALKIM/HYEONGDALKIM.github.io#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1"
+  }
+}
