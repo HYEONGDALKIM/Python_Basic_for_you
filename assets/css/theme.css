@@ -1813,7 +1813,7 @@ a.text-dark:focus {
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #003458;
+  background-color: #99b2c4;
   color: #fff;
 }
 
@@ -1967,7 +1967,7 @@ table.type08 td {
 }
 
 header {
-  background-color: #003458;
+  background-color: #FFF;
   position: fixed;
   top: 0;
   /* width: 100% */
