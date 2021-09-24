@@ -577,8 +577,32 @@ pre code {
 
 .container {
   width: 100%;
+  padding-right: 50px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: 70px;
+  
+}
+.container_3 {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_4 {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.container_1{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: absolute;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1046,7 +1070,8 @@ pre code {
   .col-sm-2 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    max-width: 18.666667%;
+    
   }
   .col-sm-3 {
     -ms-flex: 0 0 25%;
@@ -1473,6 +1498,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+   
   }
   .col-lg-7 {
     -ms-flex: 0 0 58.333333%;
@@ -1485,25 +1511,32 @@ pre code {
     max-width: 66.666667%;
   }
   .col-lg-9 {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding-top: 30px;
+   
   }
   .col-lg-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
+    padding-top: 30px;
   }
   .col-lg-11 {
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
+    padding-top: 30px;
   }
   .col-lg-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+    padding-top: 30px;
+    
   }
+ 
   .order-lg-first {
     -ms-flex-order: -1;
     order: -1;
@@ -7207,6 +7240,7 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  
 }
 
 a.bg-light:hover,
