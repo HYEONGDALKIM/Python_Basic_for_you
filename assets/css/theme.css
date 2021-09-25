@@ -1283,7 +1283,7 @@ a.text-dark:focus {
   padding-top: 5px;
   padding-bottom: 50px;
   overflow: hidden;
-  height: 2250px;
+  height: 2400px;
 }
 
 .page-section_2 {
@@ -1294,6 +1294,14 @@ a.text-dark:focus {
   height: 8200px;
 }
 
+
+.page-section_2 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 20000px;
+}
 
 .page-hero {
   position: relative;

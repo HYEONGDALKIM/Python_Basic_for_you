@@ -32,12 +32,12 @@
               <div class="dropdown" style="margin-left:280px; ">
                 <button class="dropbtn"><strong>Chapter 1</strong></button>
                 <div class="dropdown-content">
-                  <a href="./1-1.html">파이썬이란?</a>
-                  <a href="./1-2.html">파이썬의 특징</a>
-                  <a href="./1-3.html">파이썬으로 할 수 있는 것</a>
-                  <a href="./1-4.html">파이썬 설치하기</a>
-                  <a href="./1-5.html">파이썬 둘러보기</a>
-                  <a href="./1-6.html">파이썬과 에디터</a>
+                  <a href="../1/1-1.html">파이썬이란?</a>
+                  <a href="../1/1-2.html">파이썬의 특징</a>
+                  <a href="../1/1-3.html">파이썬으로 할 수 있는 것</a>
+                  <a href="../1/1-4.html">파이썬 설치하기</a>
+                  <a href="../1/1-5.html">파이썬 둘러보기</a>
+                  <a href="../1/1-6.html">파이썬과 에디터</a>
                 </div>
               </div>
             </li>
@@ -45,15 +45,15 @@
               <div class="dropdown" style="margin-left:20px; " >
                 <button class="dropbtn"><strong>Chapter 2</strong></button>
                 <div class="dropdown-content">
-                  <a href="../2/2-1.html">숫자형</a>
-                  <a href="../2/2-2.html">문자열 자료형</a>
-                  <a href="../2/2-3.html">리스트 자료형</a>
-                  <a href="../2/2-4.html">튜플 자료형</a>
-                  <a href="../2/2-5.html">딕셔너리 자료형</a>
-                  <a href="../2/2-6.html">집합 자료형</a>
-                  <a href="../2/2-7.html">Bool 자료형</a>
-                  <a href="../2/2-8.html">변수</a>
-                  <a href="../2/2-9.html">2장 연습문제</a>
+                  <a href="./2-1.html">숫자형</a>
+                  <a href="./2-2.html">문자열 자료형</a>
+                  <a href="./2-3.html">리스트 자료형</a>
+                  <a href="./2-4.html">튜플 자료형</a>
+                  <a href="./2-5.html">딕셔너리 자료형</a>
+                  <a href="./2-6.html">집합 자료형</a>
+                  <a href="./2-7.html">Bool 자료형</a>
+                  <a href="./2-8.html">변수</a>
+                  <a href="./2-9.html">2장 연습문제</a>
                 </div>
               </div>
             </li>
@@ -143,7 +143,7 @@
     <div style="height:4px; background-color: #326996"></div>
   </header>   <!-- 파이썬 사진-->
 
-  <div class="page-section_1 bg-light " style="margin-top:10px; ">
+  <div class="page-section_2 bg-light " style="margin-top:10px; ">
     <div class="col-sm-2 " style="float: left;" >
       <div class="row">
           <div style="margin:0; font-size: 12px;">
@@ -225,91 +225,148 @@
 </div>
 </div>
 
-<div class="page-section_1 bg-light">
+<div class="page-section_2 bg-light">
   <div class="container">
 <div class="col-lg-12 " style="float:left;">
-  <h1 class="page-subject "style="padding-top: 30px;">
-    01-2 파이썬의 특징<hr>  </h1>
+    <h1 class="page-subject" style="padding-top: 30px;">
+        02-8 자료형의 값을 저장하는 공간, 변수
+    
+</h1>
 
 <div class="page-content tex2jax_process">
-    <p>필자는 파이썬을 무척 좋아한다. 모든 프로그래밍 언어에는 각기 장점이 있지만 파이썬에는 다른 언어에서는 쉽게 찾아볼 수 없는 파이썬만의 독특한 매력이 있다. 파이썬의 특징을 알면 왜 파이썬을 공부해야 하는지, 과연 시간을 투자할 만한 가치가 있는지 분명하게 판단할 수 있을 것이다.</p>
+    <p>지금부터 설명할 내용은 프로그래밍 초보자가 얼른 이해하기 어려운 부분이므로 당장 이해가 되지 않는다면 그냥 건너뛰어도 된다. 파이썬에 대해서 공부하다 보면 자연스럽게 알게 될 것이다.</p>
 <div class="toc">
 <ul>
-<li>파이썬은 인간다운 언어이다</li>
-<li>파이썬은 문법이 쉬워 빠르게 배울 수 있다</li>
-<li>파이썬은 무료이지만 강력하다</li>
-<li>파이썬은 간결하다</li>
-<li>파이썬은 프로그래밍을 즐기게 해준다</li>
-<li>파이썬은 개발 속도가 빠르다</li>
+<li><a href="#_1">변수는 어떻게 만들까?</a></li>
+<li><a href="#_2">변수란?</a></li>
+<li><a href="#_3">리스트를 복사하고자 할 때</a><ul>
+<li><a href="#1">1. [:] 이용</a></li>
+<li><a href="#2-copy">2. copy 모듈 이용</a></li>
+</ul>
+</li>
+<li><a href="#_4">변수를 만드는 여러 가지 방법</a></li>
 </ul>
 </div>
-
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_1">파이썬은 인간다운 언어이다</h2>
-<p>프로그래밍이란 인간이 생각하는 것을 컴퓨터에 지시하는 행위라고 할 수 있다. 앞으로 살펴볼 파이썬 문법에서도 보게 되겠지만, 파이썬은 사람이 생각하는 방식을 그대로 표현할 수 있는 언어이다. 따라서 프로그래머는 굳이 컴퓨터의 사고 체계에 맞추어서 프로그래밍을 하려고 애쓸 필요가 없다. 이제 곧 어떤 프로그램을 구상하자마자 머릿속에서 생각한 대로 술술 써 내려가는 여러분의 모습에 놀라게 될 것이다.</p>
-<p>다음 소스 코드를 보면 이 말이 쉽게 이해될 것이다.</p>
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="python">if 4 in [1,2,3,4]: print(&quot;4가 있습니다&quot;)</code></pre>
-</div>
-<pre><code class="no-highlight"> >>&nbsp; 만약 4가 1, 2, 3, 4 중에 있으면 &quot;4가 있습니다&quot;를 출력한다.
+<h2 id="_1">변수는 어떻게 만들까?</h2>
+<p>우리는 앞에서 이미 변수를 사용해 왔다. 다음 예와 같은 a, b, c를 변수라고 한다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = &quot;python&quot;
+&gt;&gt;&gt; c = [1,2,3]
 </code></pre>
-<p>프로그램을 모르더라도 직관적으로 무엇을 뜻하는지 알 수 있지 않는가? 마치 영어 문장을 읽는 듯한 착각에 빠져든다.</p>
-</div>
-<br>
 
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_2">파이썬은 문법이 쉬워 빠르게 배울 수 있다</h2>
-<p>파이썬은 문법 자체가 아주 쉽고 간결하며 사람의 사고 체계와 매우 닮아 있다. 배우기 쉬운 언어, 활용하기 쉬운 언어가 가장 좋은 언어가 아닐까? 유명한 프로그래머인 에릭 레이먼드(Eric Raymond)는 파이썬을 공부한 지 단 하루 만에 자신이 원하는 프로그램을 작성할 수 있었다고 한다.</p>
-<blockquote>
-<p><U>※ 프로그래밍 경험이 조금이라도 있다면 파이썬의 자료형, 함수, 클래스 만드는 법, 라이브러리 및 내장 함수 사용 방법 등을 익히는 데 1주일이면 충분하리라 생각한다.</U></p>
-</blockquote>
-</div> <br>
-
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_3">파이썬은 무료이지만 강력하다</h2>
-<p>오픈 소스인 파이썬은 당연히 무료이다. 사용료 걱정없이 언제 어디서든 파이썬을 다운로드하여 사용할 수 있다.</p>
-<blockquote>
-<p>※ 오픈 소스(Open Source)란 저작권자가 소스 코드를 공개하여 누구나 별다른 제한 없이 자유롭게 사용 · 복제 · 배포 · 수정할 수 있는 소프트웨어이다.</p>
-</blockquote>
-<p>또한 프로그래머는 만들고자 하는 프로그램의 대부분을 파이썬으로 만들 수 있다. 물론 시스템 프로그래밍이나 하드웨어 제어와 같은 매우 복잡하고 반복 연산이 많은 프로그램은 파이썬과 어울리지 않는다. 하지만 파이썬은 이러한 약점을 극복할 수 있게끔 다른 언어로 만든 프로그램을 파이썬 프로그램에 포함시킬 수 있다.</p>
-<p>파이썬과 C는 찰떡궁합이란 말이 있다. 즉 프로그램의 전반적인 뼈대는 파이썬으로 만들고, 빠른 실행 속도가 필요한 부분은 C로 만들어서 파이썬 프로그램 안에 포함시키는 것이다(정말 놀라우리만치 영악한 언어가 아닌가). 사실 파이썬 라이브러리 중에는 순수 파이썬만으로 제작된 것도 많지만 C로 만든 것도 많다. C로 만든 것은 대부분 속도가 빠르다.</p>
-<blockquote>
-<p><U>※  파이썬 라이브러리는 파이썬 프로그램을 작성할 때 불러와 사용할 수 있는 미리 만들어 놓은 파이썬 파일 모음이다.</U></p>
-</blockquote>
-</div> <br>
-
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_4">파이썬은 간결하다</h2>
-<p>귀도는 파이썬을 의도적으로 간결하게 만들었다. 만약 펄(Perl)과 같은 프로그래밍 언어가 100가지 방법으로 하나의 일을 처리할 수 있다면 파이썬은 가장 좋은 방법 1가지만 사용하는 것을 선호한다. 이 간결함의 철학은 파이썬 문법에도 그대로 적용되어 파이썬 프로그래밍을 하는 사람들은 잘 정리되어 있는 소스 코드를 볼 수 있다. 다른 사람이 작업한 소스 코드도 한눈에 들어와 이해하기 쉽기 때문에 공동 작업과 유지 보수가 아주 쉽고 편하다.</p>
-<p>다음은 파이썬 프로그램의 예제이다. 이 프로그램 소스 코드를 굳이 이해하려 하지 않아도 된다. 이것을 이해할 수 있다면 여러분은 이미 파이썬에 중독된 사람일 것이다. 한번 구경해 보자.</p>
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="python"># simple.py
-languages = ['python', 'perl', 'c', 'java']
-
-for lang in languages:
-    if lang in ['python', 'perl']:
-        print(&quot;%6s need interpreter&quot; % lang)
-    elif lang in ['c', 'java']:
-        print(&quot;%6s need compiler&quot; % lang)
-    else:
-        print(&quot;should not reach here&quot;)
+<p>변수를 만들 때는 위 예처럼 =(assignment) 기호를 사용한다.</p>
+<p>다른 프로그래밍 언어인 C나 JAVA에서는 변수를 만들 때 자료형을 직접 지정해야 한다. 하지만 파이썬은 변수에 저장된 값을 스스로 판단하여 자료형을 지정하기 때문에 더 편리하다.</p>
+<pre><code class="no-highlight">변수 이름 = 변수에 저장할 값
 </code></pre>
-</div>
-<p>다른 언어에서 늘 보게 되는 단락을 구분하는 괄호({ }) 문자가 보이지 않는 것을 확인할 수 있다. 또한 줄을 참 잘 맞춘 코드라는 것도 알 수 있다. 파이썬 프로그램은 줄을 맞추지 않으면 실행되지 않는다. 코드를 예쁘게 작성하려고 줄을 맞추는 것이 아니라 프로그램이 실행되게 하려면 꼭 줄을 맞추어야 하는 것이다. 이렇듯 줄을 맞추어 코드를 작성하는 행위는 가독성에 크게 도움이 된다.</p>
-<blockquote>
-<p><U>※ 이렇게 코드의 줄을 맞추는 것을 "들여쓰기"라고 부른다. 파이썬에서 들여쓰기를 하지 않으면 프로그램이 실행되지 않는다.</U></p>
-</blockquote>
-</div> <br>
 
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_5">파이썬은 프로그래밍을 즐기게 해준다</h2>
-<p>가장 강조하고 싶은 부분이다. 파이썬만큼 필자에게 프로그래밍을 즐기게 해 준 언어는 없었다. 파이썬은 다른 것에 신경 쓸 필요 없이 내가 하고자 하는 부분에만 집중할 수 있게 해준다. 파이썬을 배우고 나면 다른 언어로 프로그래밍하는 것에 지루함을 느끼게 될지도 모른다. 조심하자!</p>
-</div> <br>
-<div style="border: 2px solid black; padding: 5px; ">
-<h2 id="_6">파이썬은 개발 속도가 빠르다</h2>
-<p>마지막으로 재미있는 다음 문장으로 파이썬의 특징을 마무리하겠다.</p>
-<p><em><strong>"Life is too short, You need python."  (인생은 너무 짧으니 파이썬이 필요해.) </strong></em></p>
-<p>파이썬의 엄청나게 빠른 개발 속도를 두고 유행처럼 퍼진 말이다. 이 위트 있는 문장은 이 책에서 계속 예제로 사용될 것이다.</p>
+<h2 id="_2">변수란?</h2>
+<p>파이썬에서 사용하는 변수는 객체를 가리키는 것이라고도 말할 수 있다. 객체란 우리가 지금껏 보아 온 자료형과 같은 것을 의미하는 말이다(객체에 대해서는 05-1에서 자세하게 공부한다).</p>
+<pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+</code></pre>
+
+<p>만약 위 코드처럼 <code>a = [1, 2, 3]</code>이라고 하면 <code>[1, 2, 3]</code> 값을 가지는 리스트 자료형(객체)이 자동으로 메모리에 생성되고 변수 a는 <code>[1, 2, 3]</code> 리스트가 저장된 메모리의 주소를 가리키게 된다.</p>
+<blockquote>
+<p>※ 메모리란 컴퓨터가 프로그램에서 사용하는 데이터를 기억하는 공간이다.</p>
+</blockquote>
+<p>a 변수가 가리키는 메모리의 주소는 다음과 같이 확인할 수 있다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; id(a)
+4303029896
+</code></pre>
+
+<p>id 함수는 변수가 가리키고 있는 객체의 주소 값을 돌려주는 파이썬 내장 함수이다. 즉 여기에서 필자가 만든 변수 a가 가리키는 <code>[1, 2, 3]</code> 리스트의 주소 값은 4303029896 임을 알 수 있다.</p>
+<h2 id="_3">리스트를 복사하고자 할 때</h2>
+<p>여기에서는 리스트 자료형에서 가장 혼동하기 쉬운 ‘복사’에 대해 설명하겠다. 다음 예를 통해 알아보자.</p>
+<pre><code class="python">&gt;&gt;&gt; a = [1,2,3]
+&gt;&gt;&gt; b = a
+</code></pre>
+
+<p>b 변수에 a 변수를 대입하면 어떻게 될까? b와 a는 같은 걸까 다른 걸까? 결론부터 말하면 b는 a와 완전히 동일하다고 할 수 있다. 다만 <code>[1, 2, 3]</code> 리스트를 참조하는 변수가 a 변수 1개에서 b 변수가 추가되어 2개로 늘어났다는 차이만 있을 뿐이다. </p>
+<p>id 함수를 사용하면 이러한 사실을 확인할 수 있다.</p>
+<pre><code class="python">&gt;&gt;&gt; id(a)
+4303029896
+&gt;&gt;&gt; id(b)
+4303029896
+</code></pre>
+
+<p><code>id(a)</code>의 값이 <code>id(b)</code>의 값과 동일함을 확인할 수 있다. 즉 a가 가리키는 대상과 b가 가리키는 대상이 동일하다는 것을 알 수 있다. 동일한 객체를 가리키고 있는지에 대해서 판단하는 파이썬 명령어 is를 다음과 같이 실행해도 역시 참(True)을 돌려준다.</p>
+<pre><code class="python">&gt;&gt;&gt; a is b  # a와 b가 가리키는 객체는 동일한가?
+True
+</code></pre>
+
+<p>이제 다음 예를 계속해서 수행해 보자.</p>
+<pre><code class="python">&gt;&gt;&gt; a[1] = 4
+&gt;&gt;&gt; a
+[1, 4, 3]
+&gt;&gt;&gt; b
+[1, 4, 3]
+</code></pre>
+
+<p>a 리스트의 두 번째 요소를 값 4로 바꾸었더니 a만 바뀌는 것이 아니라 b도 똑같이 바뀌었다. 그 이유는 앞에서 살펴본 것처럼 a, b 모두 동일한 리스트를 가리키고 있기 때문이다.</p>
+<p>그렇다면 b 변수를 생성할 때 a 변수의 값을 가져오면서 a와는 다른 주소를 가리키도록 만들수는 없을까? 다음 2가지 방법이 있다.</p>
+<h3 id="1">1. [:] 이용</h3>
+<p>첫 번째 방법으로는 다음과 같이 리스트 전체를 가리키는 [:]을 사용해서 복사하는 것이다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; b = a[:]
+&gt;&gt;&gt; a[1] = 4
+&gt;&gt;&gt; a
+[1, 4, 3]
+&gt;&gt;&gt; b
+[1, 2, 3]
+</code></pre>
+
+<p>위 예에서 볼 수 있듯이 a 리스트 값을 바꾸더라도 b 리스트에는 영향을 끼치지 않는다.</p>
+<h3 id="2-copy">2. copy 모듈 이용</h3>
+<p>두 번째는 copy 모듈을 사용하는 방법이다. 다음 예를 보면 from copy import copy라는 처음 보는 형태의 문장이 나오는데, 이것은 뒤에 설명할 파이썬 모듈 부분에서 자세히 다룬다. 여기에서는 단순히 copy 함수를 쓰기 위해서 사용하는 것이라고만 알아두자.</p>
+<pre><code class="python">&gt;&gt;&gt; from copy import copy
+&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; b = copy(a)
+</code></pre>
+
+<p>위 예에서 <code>b = copy(a)</code>는 <code>b = a[:]</code>과 동일하다.</p>
+<p>두 변수가 같은 값을 가지면서 다른 객체를 제대로 생성했는지 다음과 같이 확인해 보자.</p>
+<pre><code class="python">&gt;&gt;&gt; b is a
+False
+</code></pre>
+
+<p>위 예에서 <code>b is a</code>가 False를 돌려주므로 b와 a가 가리키는 객체는 서로 다르다는 것을 알 수 있다.</p>
+<p></p><div class="tip"><p></p>
+<p>다음처럼 리스트 자료형의 자체 함수인 copy 함수를 사용해도 copy 모듈을 사용하는 것과 동일하다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; b = a.copy()
+</code></pre>
+
+<p></p></div><p></p>
+<h2 id="_4">변수를 만드는 여러 가지 방법</h2>
+<pre><code class="python">&gt;&gt;&gt; a, b = ('python', 'life')
+</code></pre>
+
+<p>위 예문처럼 튜플로 a, b에 값을 대입할 수 있다. 이 방법은 다음 예문과 완전히 동일하다.</p>
+<pre><code class="python">&gt;&gt;&gt; (a, b) = 'python', 'life'
+</code></pre>
+
+<p>튜플 부분에서도 언급했지만 튜플은 괄호를 생략해도 된다.</p>
+<p>다음처럼 리스트로 변수를 만들 수도 있다.</p>
+<pre><code class="python">&gt;&gt;&gt; [a,b] = ['python', 'life']
+</code></pre>
+
+<p>또한 여러 개의 변수에 같은 값을 대입할 수도 있다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = b = 'python'
+</code></pre>
+
+<p>파이썬에서는 위 방법을 사용하여 두 변수의 값을 아주 간단히 바꿀 수 있다.</p>
+<pre><code class="python">&gt;&gt;&gt; a = 3
+&gt;&gt;&gt; b = 5
+&gt;&gt;&gt; a, b = b, a
+&gt;&gt;&gt; a
+5
+&gt;&gt;&gt; b
+3
+</code></pre>
+
+<p>처음에 a에 값 3, b에는 값 5가 대입되어 있었지만 a, b = b, a 문장을 수행한 후에는 그 값이 서로 바뀌었음을 확인할 수 있다.</p>
+</div>
+    
 </div>
 </div>
 </div>
@@ -320,18 +377,18 @@ for lang in languages:
 </div>
 
 <footer class="page-footer">
-  <div class="container">
-    <div class="row px-md-3">
-      <div class="col-sm-6 col-lg-3 py-3">
-        <h5>DEVELOPER INFORMATION<hr></h5>
-      </div>
-     </div>
-    <p >&nbsp;&nbsp;&nbsp;NAME : HYEONGDALKIM - HEEGYULEE - HYEONGJONGSEO<br>&nbsp;&nbsp;
-      DAEJEON_UNIVERSITY - Information and Communication Electronics<br>
-      &nbsp;&nbsp;&nbsp;COURSE : ChulHongKwon Professor's Capstone Design  </p>
-  </div>
-</footer>
-
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>DEVELOPER INFORMATION<hr></h5>
+        </div>
+       </div>
+      <p >&nbsp;&nbsp;&nbsp;NAME : HYEONGDALKIM - HEEGYULEE - HYEONGJONGSEO<br>&nbsp;&nbsp;
+        DAEJEON_UNIVERSITY - Information and Communication Electronics<br>
+        &nbsp;&nbsp;&nbsp;COURSE : ChulHongKwon Professor's Capstone Design  </p>
+    </div>
+  </footer>
+  
 
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 
