@@ -143,7 +143,7 @@
     <div style="height:4px; background-color: #326996"></div>
   </header>   <!-- 파이썬 사진-->
 
-  <div class="page-section bg-light " style="margin-top:10px; ">
+  <div class="page-section_4 bg-light " style="margin-top:10px; ">
     <div class="col-sm-2 " style="float: left;" >
       <div class="row">
           <div style="margin:0; font-size: 12px;">
@@ -225,113 +225,78 @@
 </div>
 </div>
 
-<div class="page-section bg-light">
+<div class="page-section_4 bg-light">
   <div class="container">
 <div class="col-lg-12 " style="float:left;">
     <h1 class="page-subject" style="padding-top: 30px;">
-        02-4 튜플 자료형<hr>
-    
-    </h1>
-    
-    <div class="page-content tex2jax_process">
-        <div class="toc">
-   
-    </div>
-    <div style="border: 2px solid black; padding: 5px;">
-    <h2 id="_1">튜플은 어떻게 만들까?</h2>
-    <p>튜플(tuple)은 몇 가지 점을 제외하곤 리스트와 거의 비슷하며 리스트와 다른 점은 다음과 같다.</p>
-    <ul>
-    <li>리스트는 [ ]으로 둘러싸지만 튜플은 ( )으로 둘러싼다.</li>
-    <li>리스트는 그 값의 생성, 삭제, 수정이 가능하지만 튜플은 그 값을 바꿀 수 없다. </li>
-    </ul>
-    <p>튜플의 모습은 다음과 같다.</p>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = ()
-    &gt;&gt;&gt; t2 = (1,)
-    &gt;&gt;&gt; t3 = (1, 2, 3)
-    &gt;&gt;&gt; t4 = 1, 2, 3
-    &gt;&gt;&gt; t5 = ('a', 'b', ('ab', 'cd'))
-    </code></pre></div>
-    
-    <p>리스트와 모습은 거의 비슷하지만 튜플에서는 리스트와 다른 2가지 차이점을 찾아볼 수 있다. t2 = (1,)처럼 단지 1개의 요소만을 가질 때는 요소 뒤에 콤마(,)를 반드시 붙여야 한다는 것과 t4 = 1, 2, 3처럼 괄호( )를 생략해도 무방하다는 점이다.</p>
-    <p>얼핏 보면 튜플과 리스트는 비슷한 역할을 하지만 프로그래밍을 할 때 튜플과 리스트는 구별해서 사용하는 것이 유리하다. 튜플과 리스트의 가장 큰 차이는 값을 변화시킬 수 있는가 여부이다. 즉 리스트의 항목 값은 변화가 가능하고 튜플의 항목 값은 변화가 불가능하다. 따라서 프로그램이 실행되는 동안 그 값이 항상 변하지 않기를 바란다거나 값이 바뀔까 걱정하고 싶지 않다면 주저하지 말고 튜플을 사용해야 한다. 이와는 반대로 수시로 그 값을 변화시켜야할 경우라면 리스트를 사용해야 한다. 실제 프로그램에서는 값이 변경되는 형태의 변수가 훨씬 많기 때문에 평균적으로 튜플보다는 리스트를 더 많이 사용한다.</p>
-    </div><br>
-    <div style="border: 2px solid black; padding: 5px;">
-    <h2 id="_2">튜플의 요소값을 지우거나 변경하려고 하면 어떻게 될까?</h2>
-    <p>앞에서 설명했듯이 튜플의 요솟값은 한 번 정하면 지우거나 변경할 수 없다. 다음에 소개하는 두 예를 살펴보면 무슨 말인지 알 수 있을 것이다.</p>
-    <p><strong>1. 튜플 요솟값을 삭제하려 할 때</strong></p>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; del t1[0]
-    </code></pre></div>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="no-highlight">Traceback (most recent call last):
-      File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-    TypeError: 'tuple' object doesn't support item deletion
-    </code></pre></div>
-    
-    <p>튜플의 요소를 리스트처럼 del 함수로 지우려고 한 예이다. 튜플은 요소를 지우는 행위가 지원되지 않는다는 메시지를 확인할 수 있다.</p>
-    <p><strong>2. 튜플 요솟값을 변경하려 할 때</strong></p>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; t1[0] = 'c'
-    </code></pre></div>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="no-highlight">Traceback (most recent call last):
-      File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-    TypeError: 'tuple' object does not support item assignment
-    </code></pre></div>
-    
-    <p>튜플의 요솟값을 변경하려고 해도 마찬가지로 오류가 발생하는 것을 확인할 수 있다.</p>
-    </div><br>
-    <div style="border: 2px solid black; padding: 5px;">
-    <h2 id="_3">튜플 다루기</h2>
-    <p>튜플은 값을 변화시킬 수 없다는 점만 제외하면 리스트와 완전히 동일하므로 간단하게만 살펴보겠다. 다음 예제는 서로 연관되어 있으므로 차례대로 수행해 보기 바란다.</p>
-    <h3 id="_4">인덱싱하기</h3>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; t1[0]
-    1
-    &gt;&gt;&gt; t1[3]
-    'b'
-    </code></pre></div>
-    
-    <p>문자열, 리스트와 마찬가지로 t1[0], t1[3]처럼 인덱싱이 가능하다.</p>
-    <h3 id="_5">슬라이싱하기</h3>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; t1[1:]
-    (2, 'a', 'b')
-    </code></pre></div>
-    
-    <p>t1[1]부터 튜플의 마지막 요소까지 슬라이싱하는 예이다.</p>
-    <h3 id="_6">튜플 더하기</h3>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; t2 = (3, 4)
-    &gt;&gt;&gt; t1 + t2
-    (1, 2, 'a', 'b', 3, 4)
-    </code></pre></div>
-    
-    <p>튜플을 더하는 방법을 보여 주는 예이다.</p>
-    <h3 id="_7">튜플 곱하기</h3>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t2 = (3, 4)
-    &gt;&gt;&gt; t2 * 3
-    (3, 4, 3, 4, 3, 4)
-    </code></pre></div>
-    
-    <p>튜플의 곱하기(반복) 예를 보여 준다.</p>
-    <h3 id="_8">튜플 길이 구하기</h3>
-    <div style="border:1px dotted; padding:5px;">
-    <pre><code class="python">&gt;&gt;&gt; t1 = (1, 2, 'a', 'b')
-    &gt;&gt;&gt; len(t1)
-    4
-    </code></pre></div>
-    
-    <p>튜플의 길이를 구하는 예이다.</p>
-    </div></div>
-    
+      
+       07-1 정규 표현식 살펴보기
+</h1><hr>
+
+<div class="page-content tex2jax_process">
+    <p>정규 표현식(Regular Expressions)은 복잡한 문자열을 처리할 때 사용하는 기법으로, 파이썬만의 고유 문법이 아니라 문자열을 처리하는 모든 곳에서 사용한다. 정규 표현식을 배우는 것은 파이썬을 배우는 것과는 또 다른 영역의 과제이다.</p>
+<blockquote>
+<p>※ 정규 표현식은 줄여서 간단히 "정규식"이라고도 말한다.</p>
+</blockquote>
+<div style="border: 2px solid black; padding: 5px;">
+<h2 id="_1">정규 표현식은 왜 필요한가?</h2>
+<p>다음과 같은 문제가 주어졌다고 가정해 보자.</p>
+<pre><code class="no-highlight">주민등록번호를 포함하고 있는 텍스트가 있다. 이 텍스트에 포함된 모든 주민등록번호의 뒷자리를 * 문자로 변경해 보자.
+</code></pre>
+
+<p>우선 정규식을 전혀 모르면 다음과 같은 순서로 프로그램을 작성해야 할 것이다.</p>
+<ol>
+<li>전체 텍스트를 공백 문자로 나눈다(split).</li>
+<li>나뉜 단어가 주민등록번호 형식인지 조사한다.</li>
+<li>단어가 주민등록번호 형식이라면 뒷자리를 <code>*</code>로 변환한다.</li>
+<li>나뉜 단어를 다시 조립한다.</li>
+</ol>
+<p>이를 구현한 코드는 아마도 다음과 같을 것이다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">data = &quot;&quot;&quot;
+park 800905-1049118
+kim  700905-1059119
+&quot;&quot;&quot;
+
+result = []
+for line in data.split(&quot;\n&quot;):
+    word_result = []
+    for word in line.split(&quot; &quot;):
+        if len(word) == 14 and word[:6].isdigit() and word[7:].isdigit():
+            word = word[:6] + &quot;-&quot; + &quot;*******&quot;
+        word_result.append(word)
+    result.append(&quot; &quot;.join(word_result))
+print(&quot;\n&quot;.join(result))
+</code></pre></div>
+
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">결과값:
+park 800905-*******
+kim  700905-*******
+</code></pre></div>
+
+<p>반면에 정규식을 사용하면 다음처럼 훨씬 간편하고 직관적인 코드를 작성할 수 있다. 아직 정규식 사용 방법을 배우지 않았으니 눈으로만 살펴보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">import re 
+
+data = &quot;&quot;&quot;
+park 800905-1049118
+kim  700905-1059119
+&quot;&quot;&quot;
+
+pat = re.compile(&quot;(\d{6})[-]\d{7}&quot;)
+print(pat.sub(&quot;\g&lt;1&gt;-*******&quot;, data))
+</code></pre></div>
+
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">결과값:
+park 800905-*******
+kim  700905-*******
+</code></pre></div>
+
+<p>정규 표현식을 사용하면 이렇게 간단한 예제에서도 코드가 상당히 간결해진다. 만약 찾으려는 문자열 또는 바꾸어야 할 문자열의 규칙이 매우 복잡하다면 정규식의 효용은 더 커지게 된다.</p>
+<p>이제부터 정규 표현식의 기초부터 심화 부분까지 차근차근 알아보자.</p>
+</div>
 </div>
 </div>
 </div>

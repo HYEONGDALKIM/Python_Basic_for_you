@@ -1286,6 +1286,14 @@ a.text-dark:focus {
   height: 2400px;
 }
 
+.page-section_6 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 6300px;
+}
+
 .page-section_2 {
   position: relative;
   padding-top: 5px;
@@ -1295,14 +1303,28 @@ a.text-dark:focus {
 }
 
 
-.page-section_2 {
+.page-section_3 {
   position: relative;
   padding-top: 5px;
   padding-bottom: 50px;
   overflow: hidden;
-  height: 20000px;
+  height: 18300px;
 }
 
+.page-section_4 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 9000px;
+}
+.page-section_5 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 12300px;
+}
 .page-hero {
   position: relative;
   height: 550px;
