@@ -1275,6 +1275,23 @@ a.text-dark:focus {
   padding-top: 5px;
   padding-bottom: 50px;
   overflow: hidden;
+
+}
+
+.page-section_1 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 2250px;
+}
+
+.page-section_2 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 8200px;
 }
 
 
