@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+ 
+  <title>Python_Basics_For_You</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  
+</head>
+<body>
+  <div class="back-to-top"></div>
+  <header>    
+    <div style="height:5px; background-color: #326996"></div>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><p style ="font-size:30px"><span class="text-primary">PB</span><span style="font-size:1.2em; color : rgb(5, 5, 5)";>FY</span></p></a> <!--PBFY-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:280px; ">
+                <button class="dropbtn"><strong>Chapter 1</strong></button>
+                <div class="dropdown-content">
+                  <a href="../1/1-1.html">파이썬이란?</a>
+                  <a href="../1/1-2.html">파이썬의 특징</a>
+                  <a href="../1/1-3.html">파이썬으로 할 수 있는 것</a>
+                  <a href="../1/1-4.html">파이썬 설치하기</a>
+                  <a href="../1/1-5.html">파이썬 둘러보기</a>
+                  <a href="../1/1-6.html">파이썬과 에디터</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; " >
+                <button class="dropbtn"><strong>Chapter 2</strong></button>
+                <div class="dropdown-content">
+                  <a href="../2/2-1.html">숫자형</a>
+                  <a href="../2/2-2.html">문자열 자료형</a>
+                  <a href="../2/2-3.html">리스트 자료형</a>
+                  <a href="../2/2-4.html">튜플 자료형</a>
+                  <a href="../2/2-5.html">딕셔너리 자료형</a>
+                  <a href="../2/2-6.html">집합 자료형</a>
+                  <a href="../2/2-7.html">Bool 자료형</a>
+                  <a href="../2/2-8.html">변수</a>
+                  <a href="../2/2-9.html">2장 연습문제</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; ">
+                <button class="dropbtn"><strong>Chapter 3</strong></button>
+                <div class="dropdown-content">
+                  <a href="../3/3-1.html">if문</a>
+                  <a href="../3/3-1.html">while문</a>
+                  <a href="../3/3-1.html">for문</a>
+                  <a href="../3/3-1.html">3장 연습문제</a> 
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; ">
+                <button class="dropbtn"><strong>Chapter 4</strong></button>
+                <div class="dropdown-content">
+                  <a href="../4/4-1.html">함수</a>
+                  <a href="../4/4-2.html">사용자 입출력</a>
+                  <a href="../4/4-3.html">파일 읽고 쓰기</a>
+                  <a href="../4/4-4.html">4장 연습문제</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 5</strong></button>
+              <div class="dropdown-content">
+                <a href="./5-1.html">클래스</a>
+                <a href="./5-2.html">모듈</a>
+                <a href="./5-3.html">패키지</a>
+                <a href="./5-4.html">예외처리</a>
+                <a href="./5-5.html">내장함수</a>
+                <a href="./5-6.html">라이브러리</a>
+                <a href="./5-7.html">5장 연습문제</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 6</strong></button>
+              <div class="dropdown-content">
+                <a href="../6/6-1.html">내가 프로그램을?</a>
+                <a href="../6/6-2.html">3과 5의 배수합</a>
+                <a href="../6/6-3.html">게시판 페이징</a>
+                <a href="../6/6-4.html">간단한 메모장</a>
+                <a href="../6/6-5.html">탭 > 공백4개</a>
+                <a href="../6/6-6.html">하위 디렉터리 검색</a>
+                <a href="../6/6-7.html">파이보</a>
+                <a href="../6/6-8.html">코딩도장</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 7</strong></button>
+              <div class="dropdown-content">
+                <a href="../7/7-1.html">정규표현식(1)</a>
+                <a href="../7/7-2.html">정규표현식(2)</a>
+                <a href="../7/7-3.html">정규표현식(3)</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 8</strong></button>
+              <div class="dropdown-content">
+                <a href="../8/8-1.html">종합 문제</a>
+                <a href="../8/8-2.html">풀이</a>
+                <a href="../8/8-3.html">공부를 마치며</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" style="margin-top:16px;">
+            <div style="margin-left:20px; ">
+              <a class="nav-link" href="../re_site.html"><p style = " font-size:1.0em;  "><b>참고사이트</b></p></a>
+            </div>
+          </li>
+          <li class="nav-item" style="margin-top:16px;">
+              <a class="nav-link" href="../LP.html"><p style = " font-size:1.0em;  "><b>학습플래닛</b></p></a>
+          </li>
+          </ul>
+        </div> 
+      </div> 
+    </nav>
+    <div style="height:4px; background-color: #326996"></div>
+  </header>   <!-- 파이썬 사진-->
+
+  <div class="page-section_5 bg-light " style="margin-top:10px; ">
+    <div class="col-sm-2 " style="float: left;" >
+      <div class="row">
+          <div style="margin:0; font-size: 12px;">
+
+              <!-- 1장 파트 -->
+              <a class="list-group-item active"><strong>01장</strong></a>
+              <a class="list-group-item " href="../1/1-1.html"> &nbsp;&nbsp;&nbsp;01-1 파이썬이란?</a>
+              <a class="list-group-item " href="../1/1-2.html"> &nbsp;&nbsp;&nbsp;01-2 파이썬의 특징</a> 
+              <a class="list-group-item " href="../1/1-3.html"> &nbsp;&nbsp;&nbsp;01-3 파이썬으로 할 수 있는 것</a>
+              <a class="list-group-item " href="../1/1-4.html"> &nbsp;&nbsp;&nbsp;01-4 파이썬 설치하기</a>
+              <a class="list-group-item " href="../1/1-5.html"> &nbsp;&nbsp;&nbsp;01-5 파이썬 둘러보기</a>
+              <a class="list-group-item " href="../1/1-6.html"> &nbsp;&nbsp;&nbsp;01-6 파이썬과 에디터</a>
+              <!-- 2장 파트 -->
+              <a class="list-group-item active"><strong>02장</strong></a>
+              <a class="list-group-item " href="../2/2-1.html"> &nbsp;&nbsp;&nbsp;02-1 숫자형</a>
+              <a class="list-group-item " href="../2/2-2.html"> &nbsp;&nbsp;&nbsp;02-2 문자열 자료형</a> 
+              <a class="list-group-item " href="../2/2-3.html"> &nbsp;&nbsp;&nbsp;02-3 리스트 자료형</a>
+              <a class="list-group-item " href="../2/2-4.html"> &nbsp;&nbsp;&nbsp;02-4 튜플 자료형</a>
+              <a class="list-group-item " href="../2/2-5.html"> &nbsp;&nbsp;&nbsp;02-5 딕셔너리 자료형</a>
+              <a class="list-group-item " href="../2/2-6.html"> &nbsp;&nbsp;&nbsp;02-6 집합 자료형</a>
+              <a class="list-group-item " href="../2/2-7.html"> &nbsp;&nbsp;&nbsp;02-7 Bool 자료형</a>
+              <a class="list-group-item " href="../2/2-8.html"> &nbsp;&nbsp;&nbsp;02-8 변수</a>
+              <a class="list-group-item " href="../2/2-9.html"> &nbsp;&nbsp;&nbsp;-----2장 연습문제-----</a>
+
+              <!-- 3장 파트 -->
+              <a class="list-group-item active"><strong>03장</strong></a>
+              <a class="list-group-item " href="../3/3-1.html"> &nbsp;&nbsp;&nbsp;03-1 if문</a>
+              <a class="list-group-item " href="../3/3-2.html"> &nbsp;&nbsp;&nbsp;03-2 while문</a> 
+              <a class="list-group-item " href="../3/3-3.html"> &nbsp;&nbsp;&nbsp;03-3 for문</a>
+              <a class="list-group-item " href="../3/3-4.html"> &nbsp;&nbsp;&nbsp;-----3장 연습문제-----</a>
+
+              <!-- 4장 파트 -->
+              <a class="list-group-item active"><strong>04장</strong></a>
+              <a class="list-group-item " href="../4/4-1.html"> &nbsp;&nbsp;&nbsp;04-1 함수</a> 
+              <a class="list-group-item " href="../4/4-2.html"> &nbsp;&nbsp;&nbsp;04-2 사용자 입출력</a>
+              <a class="list-group-item " href="../4/4-3.html"> &nbsp;&nbsp;&nbsp;04-3 파일 읽고쓰기</a>
+              <a class="list-group-item " href="../4/4-4.html"> &nbsp;&nbsp;&nbsp;-----4장 연습문제-----</a>
+
+               <!-- 5장 파트 -->
+               <a class="list-group-item active"><strong>05장</strong></a>
+               <a class="list-group-item " href="./5-1.html"> &nbsp;&nbsp;&nbsp;05-1 클래스</a> 
+               <a class="list-group-item " href="./5-2.html"> &nbsp;&nbsp;&nbsp;05-2 모듈</a>
+               <a class="list-group-item " href="./5-3.html"> &nbsp;&nbsp;&nbsp;05-3 패키지</a>
+               <a class="list-group-item " href="./5-4.html"> &nbsp;&nbsp;&nbsp;05-4 예외처리</a>
+               <a class="list-group-item " href="./5-5.html"> &nbsp;&nbsp;&nbsp;05-5 내장함수</a>
+               <a class="list-group-item " href="./5-6.html"> &nbsp;&nbsp;&nbsp;05-6 라이브러리</a>
+               <a href="javascript:page(17684)" class="list-group-item "> &nbsp;&nbsp;&nbsp;-----5장 연습문제-----</a>
+             
+                <!-- 6장 파트 -->
+                <a class="list-group-item active"><strong>06장</strong></a>
+                <a class="list-group-item " href="../6/6-1.html"> &nbsp;&nbsp;&nbsp;06-1 내가 프로그램을?</a> 
+                <a class="list-group-item " href="../6/6-2.html"> &nbsp;&nbsp;&nbsp;06-2 3과 5의 배수합</a>
+                <a class="list-group-item " href="../6/6-3.html"> &nbsp;&nbsp;&nbsp;06-3 게시판 페이징</a>
+                <a class="list-group-item " href="../6/6-4.html"> &nbsp;&nbsp;&nbsp;06-4 간단한 메모장</a>
+                <a class="list-group-item " href="../6/6-5.html"> &nbsp;&nbsp;&nbsp;06-5 탭 > 공백4개</a>
+                <a class="list-group-item " href="../6/6-6.html"> &nbsp;&nbsp;&nbsp;06-6 하위 디렉터리 검색</a>
+                <a class="list-group-item " href="../6/6-7.html"> &nbsp;&nbsp;&nbsp;06-7 파이보</a>
+                <a class="list-group-item " href="../6/6-8.html"> &nbsp;&nbsp;&nbsp;06-8 코딩도장</a>
+
+                <!-- 7장 파트 -->
+                <a class="list-group-item active"><strong>07장</strong></a>
+                <a class="list-group-item " href="../7/7-1.html"> &nbsp;&nbsp;&nbsp;07-1 정규표현식(1)</a> 
+                <a class="list-group-item " href="../7/7-2.html"> &nbsp;&nbsp;&nbsp;07-2 정규표현식(2)</a>
+                <a class="list-group-item " href="../7/7-3.html">&nbsp;&nbsp;&nbsp;07-3 정규표현식(3)</a>
+
+                <!-- 8,9,10 -->
+                <a class="list-group-item active"><strong>마지막장</strong></a>
+                <a class="list-group-item " href="../8/8-1.html"> &nbsp;&nbsp;&nbsp;종합문제</a>
+                <a class="list-group-item " href="../8/8-2.html"> &nbsp;&nbsp;&nbsp;풀이</a>
+                <a class="list-group-item " href="../8/8-3.html"> &nbsp;&nbsp;&nbsp;마치며</a>
+              
+      <input type="hidden" name="request_mobile" id="request_mobile" value="0" />
+
+      <form id="search_form" action="https://wikidocs.net/book/search/1" method="post">
+          <input type="hidden" name="keyword" id="keyword">
+      </form>
+  </div>
+</div>
+</div>
+
+<div class="page-section_5 bg-light">
+  <div class="container">
+<div class="col-lg-12 " style="float:left;">
+    <h1 class="page-subject" style="padding-top: 30px;">
+      05-5 내장 함수 <hr>
+    
+    </h1>
+    
+    <div class="page-content tex2jax_process">
+        <p>지금까지 파이썬으로 프로그래밍하기 위해 알아야 하는 것들을 대부분 공부했다. 이제 여러분은 원하는 프로그램을 직접 만들 수 있을 것이다. 하지만 그 전에 먼저 여러분이 만들려는 프로그램이 이미 만들어져 있는지 살펴보기 바란다. 물론 공부를 위해서라면 누군가 만들어 놓은 프로그램을 또 만들 수도 있다. 하지만 그런 목적이 아니라면 이미 만들어진 것을 다시 만드는 것은 불필요한 행동이다(Don’t Reinvent The Wheel, 이미 있는 것을 다시 만드느라 쓸데없이 시간을 낭비하지 말라). 그리고 이미 만들어진 프로그램은 테스트 과정을 수 없이 거쳤기 때문에 충분히 검증되어 있다. 따라서 무엇인가 새로운 프로그램을 만들기 전에는 이미 만들어진 것들, 그중에서도 특히 파이썬 배포본에 함께 들어 있는 파이썬 라이브러리를 살펴보는 것이 매우 중요하다.</p>
+    <p>라이브러리를 살펴보기 전에 파이썬 내장 함수를 먼저 살펴보자. 우리는 이미 몇 가지 내장 함수를 배웠다. print, del, type 등이 바로 그것이다. 이러한 파이썬 내장 함수는 외부 모듈과 달리 import가 필요하지 않기 때문에 아무런 설정 없이 바로 사용할 수 있다.</p>
+    <p>이 책에서는 활용 빈도가 높고 중요한 함수를 중심으로 알파벳 순서대로 간략히 정리했다. 파이썬으로 프로그래밍을 하기 위해 이들 함수를 지금 당장 모두 알아야 하는 것은 아니므로 가벼운 마음으로 천천히 살펴보자.</p>
+    
+    <h2 id="abs">abs</h2>
+    <p>abs(x)는 어떤 숫자를 입력받았을 때, 그 숫자의 절댓값을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; abs(3)
+    3
+    &gt;&gt;&gt; abs(-3)
+    3
+    &gt;&gt;&gt; abs(-1.2)
+    1.2    </code></pre></div>
+    
+    <h2 id="all">all</h2>
+    <p>all(x)는 반복 가능한(iterable) 자료형 x를 입력 인수로 받으며 이 x의 요소가 모두 참이면 True, 거짓이 하나라도 있으면 False를 돌려준다.</p>
+    <blockquote>
+    <p>※ 반복 가능한 자료형이란 for문으로 그 값을 출력할 수 있는 것을 의미한다. 리스트, 튜플, 문자열, 딕셔너리, 집합 등이 있다.</p>
+    </blockquote>
+    <p>다음 예를 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; all([1, 2, 3])
+    True    </code></pre></div>
+    
+    <p>리스트 자료형 [1, 2, 3]은 모든 요소가 참이므로 True를 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; all([1, 2, 3, 0])
+    False    </code></pre></div>
+    
+    <p>리스트 자료형 [1, 2, 3, 0] 중에서 요소 0은 거짓이므로 False를 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; all([])
+    True    </code></pre></div>
+    
+    <p>만약 all의 입력 인수가 빈 값인 경우에는 True를 리턴한다.</p>
+    <blockquote>
+    <p>※ 자료형의 참과 거짓에 대해 잘 기억나지 않는다면 02-7을 다시 한 번 읽어 보자.</p>
+    </blockquote>
+    <h2 id="any">any</h2>
+    <p>any(x)는 반복 가능한(iterable) 자료형 x를 입력 인수로 받으며 이 x의 요소 중 하나라도 참이 있으면 True를 돌려주고, x가 모두 거짓일 때에만 False를 돌려준다. all(x)의 반대이다.</p>
+    <p>다음 예를 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; any([1, 2, 3, 0])
+    True    </code></pre></div>
+    
+    <p>리스트 자료형 [1, 2, 3, 0] 중에서 1, 2, 3이 참이므로 True를 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; any([0, &quot;&quot;])
+    False    </code></pre></div>
+    
+    <p>리스트 자료형 [0, ""]의 요소 0과 ""은 모두 거짓이므로 False를 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; any([])
+    False    </code></pre></div>
+    
+    <p>만약 any의 입력 인수가 빈 값인 경우에는 False를 리턴한다.</p>
+    <h2 id="chr">chr</h2>
+    <p>chr(i)는 유니코드(Unicode) 값을 입력받아 그 코드에 해당하는 문자를 출력하는 함수이다.</p>
+    <blockquote>
+    <p>※ 유니코드는 전 세계의 모든 문자를 컴퓨터에서 일관되게 표현하고 다룰 수 있도록 설계된 산업 표준이다.</p>
+    </blockquote>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; chr(97)
+    'a'
+    &gt;&gt;&gt; chr(44032)
+    '가'    </code></pre></div>
+    
+    <h2 id="dir">dir</h2>
+    <p>dir은 객체가 자체적으로 가지고 있는 변수나 함수를 보여 준다. 다음 예는 리스트와 딕셔너리 객체 관련 함수(메서드)를 보여 주는 예이다. 우리가 02장에서 살펴본 자료형 관련 함수를 만나 볼 수 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; dir([1, 2, 3])
+    ['append', 'count', 'extend', 'index', 'insert', 'pop',...]
+    &gt;&gt;&gt; dir({'1':'a'})
+    ['clear', 'copy', 'get', 'has_key', 'items', 'keys',...]</code></pre></div>
+    
+    <h2 id="divmod">divmod</h2>
+    <p>divmod(a, b)는 2개의 숫자를 입력으로 받는다. 그리고 a를 b로 나눈 몫과 나머지를 튜플 형태로 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; divmod(7, 3)
+    (2, 1)    </code></pre></div>
+    
+    <p>몫을 구하는 연산자 <code>//</code>와 나머지를 구하는 연산자 <code>%</code>를 각각 사용한 결과와 비교해 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; 7 // 3
+    2
+    &gt;&gt;&gt; 7 % 3
+    1    </code></pre></div>
+    
+    <h2 id="enumerate">enumerate</h2>
+    <p>enumerate는 "열거하다"라는 뜻이다. 이 함수는 순서가 있는 자료형(리스트, 튜플, 문자열)을 입력으로 받아 인덱스 값을 포함하는 enumerate 객체를 돌려준다. </p>
+    <blockquote>
+    <p>※ 보통 enumerate 함수는 다음 예제처럼 for문과 함께 자주 사용한다.</p>
+    </blockquote>
+    <p>잘 이해되지 않으면 다음 예를 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; for i, name in enumerate(['body', 'foo', 'bar']):
+    ...     print(i, name)
+    ...
+    0 body
+    1 foo
+    2 bar    </code></pre></div>
+    
+    <p>순서 값과 함께 body, foo, bar가 순서대로 출력되었다. 즉 위 예제와 같이 enumerate를 for문과 함께 사용하면 자료형의 현재 순서(index)와 그 값을 쉽게 알 수 있다.</p>
+    <p>for문처럼 반복되는 구간에서 객체가 현재 어느 위치에 있는지 알려 주는 인덱스 값이 필요할때 enumerate 함수를 사용하면 매우 유용하다.</p>
+    <h2 id="eval">eval</h2>
+    <p>eval(expression )은 실행 가능한 문자열(1+2, 'hi' + 'a' 같은 것)을 입력으로 받아 문자열을 실행한 결괏값을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; eval('1+2')
+    3
+    &gt;&gt;&gt; eval(&quot;'hi' + 'a'&quot;)
+    'hia'
+    &gt;&gt;&gt; eval('divmod(4, 3)')
+    (1, 1)
+    </code></pre></div>
+    
+    <p>보통 eval은 입력받은 문자열로 파이썬 함수나 클래스를 동적으로 실행하고 싶을 때 사용한다.</p>
+    <h2 id="filter">filter</h2>
+    <p>filter란 무엇인가를 걸러낸다는 뜻으로 filter 함수도 동일한 의미를 가진다.</p>
+    <p>filter 함수는 첫 번째 인수로 함수 이름을, 두 번째 인수로 그 함수에 차례로 들어갈 반복 가능한 자료형을 받는다. 그리고 두 번째 인수인 반복 가능한 자료형 요소가 첫 번째 인수인 함수에 입력되었을 때 반환 값이 참인 것만 묶어서(걸러 내서) 돌려준다.</p>
+    <p>다음 예를 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">#positive.py 
+    def positive(l): 
+        result = [] 
+        for i in l: 
+            if i &gt; 0: 
+                result.append(i) 
+        return result
+    
+    print(positive([1,-3,2,0,-5,6]))    </code></pre></div>
+    
+    <blockquote>
+    <p>결과값: [1, 2, 6]</p>
+    </blockquote>
+    <p>즉 위에서 만든 positive 함수는 리스트를 입력값으로 받아 각각의 요소를 판별해서 양수 값만 돌려주는 함수이다.</p>
+    <p>filter 함수를 사용하면 위 내용을 다음과 같이 간단하게 작성할 수 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">#filter1.py
+    def positive(x):
+        return x &gt; 0
+    
+    print(list(filter(positive, [1, -3, 2, 0, -5, 6])))    </code></pre></div>
+    
+    <blockquote>
+    <p>결과값: [1, 2, 6]</p>
+    </blockquote>
+    <p>여기에서는 두 번째 인수인 리스트의 요소들이 첫 번째 인수인 positive 함수에 입력되었을때 반환 값이 참인 것만 묶어서 돌려준다. 앞의 예에서는 1, 2, 6만 양수여서 x &gt; 0 문장이 참이되므로 [1, 2, 6]이라는 결괏값을 돌려주게 된 것이다.</p>
+    <p>앞의 함수는 lambda를 사용하면 더욱 간편하게 코드를 작성할 수 있다. </p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(filter(lambda x: x &gt; 0, [1, -3, 2, 0, -5, 6]))
+    [1, 2, 6]    </code></pre></div>
+    
+    <h2 id="hex">hex</h2>
+    <p>hex(x)는 정수 값을 입력받아 16진수(hexadecimal)로 변환하여 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; hex(234)
+    '0xea'
+    &gt;&gt;&gt; hex(3)
+    '0x3'    </code></pre></div>
+    
+    <h2 id="id">id</h2>
+    <p>id(object)는 객체를 입력받아 객체의 고유 주소 값(레퍼런스)을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = 3
+    &gt;&gt;&gt; id(3)
+    135072304
+    &gt;&gt;&gt; id(a)
+    135072304
+    &gt;&gt;&gt; b = a
+    &gt;&gt;&gt; id(b)
+    135072304    </code></pre></div>
+    
+    <p>위 예의 3, a, b는 고유 주소 값이 모두 135072304이다. 즉 3, a, b가 모두 같은 객체를 가리키고 있다.</p>
+    <p>만약 id(4)라고 입력하면 4는 3, a, b와 다른 객체이므로 당연히 다른 고유 주소 값이 출력된다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; id(4)
+    135072292    </code></pre></div>
+    
+    <h2 id="input">input</h2>
+    <p>input([prompt])은 사용자 입력을 받는 함수이다. 매개변수로 문자열을 주면 다음 세 번째 예에서 볼 수 있듯이 그 문자열은 프롬프트가 된다.</p>
+    <blockquote>
+    <p>※ [ ] 기호는 괄호 안의 내용을 생략할 수 있다는 관례 표기법임을 기억하자.</p>
+    </blockquote>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = input()
+    hi
+    &gt;&gt;&gt; a
+    'hi'
+    &gt;&gt;&gt; b = input(&quot;Enter: &quot;)
+    Enter: hi    </code></pre></div>
+    
+    <p>위에서 입력받은 문자열을 확인해 보면 다음과 같다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; b
+    'hi'    </code></pre></div>
+    
+    <h2 id="int">int</h2>
+    <p>int(x)는 문자열 형태의 숫자나 소수점이 있는 숫자 등을 정수 형태로 돌려주는 함수로, 정수를 입력으로 받으면 그대로 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; int('3')
+    3
+    &gt;&gt;&gt; int(3.4)
+    3    </code></pre></div>
+    
+    <p>int(x, radix)는 radix 진수로 표현된 문자열 x를 10진수로 변환하여 돌려준다.</p>
+    <p>2진수로 표현된 11의 10진수 값은 다음과 같이 구한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; int('11', 2)
+    3    </code></pre></div>
+    
+    <p>16진수로 표현된 1A의 10진수 값은 다음과 같이 구한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; int('1A', 16)
+    26    </code></pre></div>
+    
+    <h2 id="isinstance">isinstance</h2>
+    <p>isinstance(object, class )는 첫 번째 인수로 인스턴스, 두 번째 인수로 클래스 이름을 받는다. 입력으로 받은 인스턴스가 그 클래스의 인스턴스인지를 판단하여 참이면 True, 거짓이면 False를 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; class Person: pass
+    ...
+    &gt;&gt;&gt; a = Person()
+    &gt;&gt;&gt; isinstance(a, Person)
+    True    </code></pre></div>
+    
+    <p>위 예는 a가 Person 클래스가 만든 인스턴스임을 확인시켜 준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; b = 3
+    &gt;&gt;&gt; isinstance(b, Person)
+    False    </code></pre></div>
+    
+    <p>b는 Person 클래스가 만든 인스턴스가 아니므로 False를 돌려준다.</p>
+    <h2 id="len">len</h2>
+    <p>len(s)은 입력값 s의 길이(요소의 전체 개수)를 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; len(&quot;python&quot;)
+    6
+    &gt;&gt;&gt; len([1,2,3])
+    3
+    &gt;&gt;&gt; len((1, 'a'))
+    2    </code></pre></div>
+    
+    <h2 id="list">list</h2>
+    <p>list(s)는 반복 가능한 자료형 s를 입력받아 리스트로 만들어 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(&quot;python&quot;)
+    ['p', 'y', 't', 'h', 'o', 'n']
+    &gt;&gt;&gt; list((1,2,3))
+    [1, 2, 3]    </code></pre></div>
+    
+    <p>list 함수에 리스트를 입력으로 주면 똑같은 리스트를 복사하여 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+    &gt;&gt;&gt; b = list(a)
+    &gt;&gt;&gt; b
+    [1, 2, 3]
+    </code></pre></div>
+    
+    <h2 id="map">map</h2>
+    <p>map(f, iterable)은 함수(f)와 반복 가능한(iterable) 자료형을 입력으로 받는다. map은 입력받은 자료형의 각 요소를 함수 f가 수행한 결과를 묶어서 돌려주는 함수이다.</p>
+    <p>다음 예를 보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python"># two_times.py
+    def two_times(numberList):
+        result = [ ]
+        for number in numberList:
+            result.append(number*2)
+        return result
+    
+    result = two_times([1, 2, 3, 4])
+    print(result)    </code></pre></div>
+    
+    <p>two_times 함수는 리스트 요소를 입력받아 각 요소에 2를 곱한 결괏값을 돌려준다. 실행 결과는 다음과 같다.</p>
+    <blockquote>
+    <p>결과값: [2, 4, 6, 8]</p>
+    </blockquote>
+    <p>위 예제는 map 함수를 사용하면 다음처럼 바꿀 수 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; def two_times(x): 
+    ...     return x*2
+    ...
+    &gt;&gt;&gt; list(map(two_times, [1, 2, 3, 4]))
+    [2, 4, 6, 8]    </code></pre></div>
+    
+    <p>이제 앞 예제를 해석해 보자. 먼저 리스트의 첫 번째 요소인 1이 two_times 함수의 입력값으로 들어가고 <code>1 * 2</code>의 과정을 거쳐서 2가 된다. 다음으로 리스트의 두 번째 요소인 2가 <code>2 * 2</code> 의 과정을 거쳐 4가 된다. 따라서 결괏값 리스트는 이제 [2, 4]가 된다. 총 4개의 요솟값이 모두 수행되면 마지막으로 [2, 4, 6, 8]을 돌려준다. 이것이 map 함수가 하는 일이다.</p>
+    <blockquote>
+    <p>※ 위 예에서 map의 결과를 리스트로 보여 주기위해 list 함수를 사용하여 출력하였다.</p>
+    </blockquote>
+    <p>앞의 예는 lambda를 사용하면 다음처럼 간략하게 만들 수 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(map(lambda a: a*2, [1, 2, 3, 4]))
+    [2, 4, 6, 8]    </code></pre></div>
+    
+    <h2 id="max">max</h2>
+    <p>max(iterable)는 인수로 반복 가능한 자료형을 입력받아 그 최댓값을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; max([1, 2, 3])
+    3
+    &gt;&gt;&gt; max(&quot;python&quot;)
+    'y'    </code></pre></div>
+    
+    <h2 id="min">min</h2>
+    <p>min(iterable)은 max 함수와 반대로, 인수로 반복 가능한 자료형을 입력받아 그 최솟값을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; min([1, 2, 3])
+    1
+    &gt;&gt;&gt; min(&quot;python&quot;)
+    'h'    </code></pre></div>
+    
+    <h2 id="oct">oct</h2>
+    <p>oct(x)는 정수 형태의 숫자를 8진수 문자열로 바꾸어 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; oct(34)
+    '0o42'
+    &gt;&gt;&gt; oct(12345)
+    '0o30071'    </code></pre></div>
+    
+    <h2 id="open">open</h2>
+    <p>open(filename, [mode])은 "파일 이름"과 "읽기 방법"을 입력받아 파일 객체를 돌려주는 함수이다. 읽기 방법(mode)을 생략하면 기본값인 읽기 전용 모드(r)로 파일 객체를 만들어 돌려준다.</p>
+    <table>
+    <thead>
+    <tr>
+    <th>mode</th>
+    <th>설명</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>w</td>
+    <td>쓰기 모드로 파일 열기</td>
+    </tr>
+    <tr>
+    <td>r</td>
+    <td>읽기 모드로 파일 열기</td>
+    </tr>
+    <tr>
+    <td>a</td>
+    <td>추가 모드로 파일 열기</td>
+    </tr>
+    <tr>
+    <td>b</td>
+    <td>바이너리 모드로 파일 열기</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>b는 w, r, a와 함께 사용한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; f = open(&quot;binary_file&quot;, &quot;rb&quot;)</code></pre></div>
+    
+    <p>위 예의 rb는 "바이너리 읽기 모드"를 의미한다.</p>
+    <p>다음 예의 fread와 fread2는 동일한 방법이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; fread = open(&quot;read_mode.txt&quot;, 'r')
+    &gt;&gt;&gt; fread2 = open(&quot;read_mode.txt&quot;)    </code></pre></div>
+    
+    <p>즉 모드 부분을 생략하면 기본값으로 읽기 모드 r를 갖게 된다.</p>
+    <p>다음은 추가 모드(a)로 파일을 여는 예이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; fappend = open(&quot;append_mode.txt&quot;, 'a')    </code></pre></div>
+    
+    <h2 id="ord">ord</h2>
+    <p>ord(c)는 문자의 유니코드 값을 돌려주는 함수이다.</p>
+    <blockquote>
+    <p>※ ord 함수는 chr 함수와 반대이다.</p>
+    </blockquote>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; ord('a')
+    97
+    &gt;&gt;&gt; ord('가')
+    44032    </code></pre></div>
+    
+    <h2 id="pow">pow</h2>
+    <p>pow(x, y)는 x의 y 제곱한 결괏값을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; pow(2, 4)
+    16
+    &gt;&gt;&gt; pow(3, 3)
+    27    </code></pre></div>
+    
+    <h2 id="range">range</h2>
+    <p>range([start,] stop [,step] )는 for문과 함께 자주 사용하는 함수이다. 이 함수는 입력받은 숫자에 해당하는 범위 값을 반복 가능한 객체로 만들어 돌려준다.</p>
+    <p><strong>인수가 하나일 경우</strong></p>
+    <p>시작 숫자를 지정해 주지 않으면 range 함수는 0부터 시작한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(range(5))
+    [0, 1, 2, 3, 4]    </code></pre></div>
+    
+    <p><strong>인수가 2개일 경우</strong></p>
+    <p>입력으로 주어지는 2개의 인수는 시작 숫자와 끝 숫자를 나타낸다. 단 끝 숫자는 해당 범위에 포함되지 않는다는 것에 주의하자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(range(5, 10))
+    [5, 6, 7, 8, 9]    </code></pre></div>
+    
+    <p><strong>인수가 3개일 경우</strong></p>
+    <p>세 번째 인수는 숫자 사이의 거리를 말한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(range(1, 10, 2))
+    [1, 3, 5, 7, 9]
+    &gt;&gt;&gt; list(range(0, -10, -1))
+    [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]    </code></pre></div>
+    
+    <h2 id="round">round</h2>
+    <p>round(number[, ndigits]) 함수는 숫자를 입력받아 반올림해 주는 함수이다.</p>
+    <blockquote>
+    <p>※ [, ndigits]는 ndigits가 있을 수도 있고 없을 수도 있다는 의미이다.</p>
+    </blockquote>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; round(4.6)
+    5
+    &gt;&gt;&gt; round(4.2)
+    4    </code></pre></div>
+    
+    <p>다음과 같이 실수 5.678을 소수점 2자리까지만 반올림하여 표시할 수 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; round(5.678, 2)
+    5.68    </code></pre></div>
+    
+    <p>round 함수의 두 번째 매개변수는 반올림하여 표시하고 싶은 소수점의 자릿수(ndigits)이다.</p>
+    <h2 id="sorted">sorted</h2>
+    <p>sorted(iterable) 함수는 입력값을 정렬한 후 그 결과를 리스트로 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; sorted([3, 1, 2])
+    [1, 2, 3]
+    &gt;&gt;&gt; sorted(['a', 'c', 'b'])
+    ['a', 'b', 'c']
+    &gt;&gt;&gt; sorted(&quot;zero&quot;)
+    ['e', 'o', 'r', 'z']
+    &gt;&gt;&gt; sorted((3, 2, 1))
+    [1, 2, 3]    </code></pre></div>
+    
+    <p>리스트 자료형에도 sort 함수가 있다. 하지만 리스트 자료형의 sort 함수는 리스트 객체 그 자체를 정렬만 할 뿐 정렬된 결과를 돌려주지는 않는다.</p>
+    <h2 id="str">str</h2>
+    <p>str(object)은 문자열 형태로 객체를 변환하여 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; str(3)
+    '3'
+    &gt;&gt;&gt; str('hi')
+    'hi'
+    &gt;&gt;&gt; str('hi'.upper())
+    'HI'    </code></pre></div>
+    
+    <h2 id="sum">sum</h2>
+    <p>sum(iterable) 은 입력받은 리스트나 튜플의 모든 요소의 합을 돌려주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; sum([1,2,3])
+    6
+    &gt;&gt;&gt; sum((4,5,6))
+    15    </code></pre></div>
+    
+    <h2 id="tuple">tuple</h2>
+    <p>tuple(iterable)은 반복 가능한 자료형을 입력받아 튜플 형태로 바꾸어 돌려주는 함수이다. 만약 튜플이 입력으로 들어오면 그대로 돌려준다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; tuple(&quot;abc&quot;)
+    ('a', 'b', 'c')
+    &gt;&gt;&gt; tuple([1, 2, 3])
+    (1, 2, 3)
+    &gt;&gt;&gt; tuple((1, 2, 3))
+    (1, 2, 3)    </code></pre></div>
+    
+    <h2 id="type">type</h2>
+    <p>type(object)은 입력값의 자료형이 무엇인지 알려 주는 함수이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; type(&quot;abc&quot;)
+    &lt;class 'str'&gt;
+    &gt;&gt;&gt; type([ ])
+    &lt;class 'list'&gt;
+    &gt;&gt;&gt; type(open(&quot;test&quot;, 'w'))
+    &lt;class '_io.TextIOWrapper'&gt;    </code></pre></div>
+    
+    <h2 id="zip">zip</h2>
+    <p><code>zip(*iterable)</code>은 동일한 개수로 이루어진 자료형을 묶어 주는 역할을 하는 함수이다. </p>
+    <blockquote>
+    <p>※ 여기서 사용한 <code>*iterable</code>은 반복 가능(iterable)한 자료형 여러 개를 입력할 수 있다는 의미이다.</p>
+    </blockquote>
+    <p>잘 이해되지 않는다면 다음 예제를 살펴보자.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; list(zip([1, 2, 3], [4, 5, 6]))
+    [(1, 4), (2, 5), (3, 6)]
+    &gt;&gt;&gt; list(zip([1, 2, 3], [4, 5, 6], [7, 8, 9]))
+    [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+    &gt;&gt;&gt; list(zip(&quot;abc&quot;, &quot;def&quot;))
+    [('a', 'd'), ('b', 'e'), ('c', 'f')]    </code></pre></div>
+    </div>
+        
+      
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>DEVELOPER INFORMATION<hr></h5>
+        </div>
+       </div>
+      <p >&nbsp;&nbsp;&nbsp;NAME : HYEONGDALKIM - HEEGYULEE - HYEONGJONGSEO<br>&nbsp;&nbsp;
+        DAEJEON_UNIVERSITY - Information and Communication Electronics<br>
+        &nbsp;&nbsp;&nbsp;COURSE : ChulHongKwon Professor's Capstone Design  </p>
+    </div>
+  </footer>
+  
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="assets/vendor/wow/wow.min.js"></script>
+
+<script src="assets/js/theme.js"></script>
+  
+
+</body>
+</html>

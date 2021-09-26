@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+ 
+  <title>Python_Basics_For_You</title>
+
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  
+</head>
+<body>
+  <div class="back-to-top"></div>
+  <header>    
+    <div style="height:5px; background-color: #326996"></div>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><p style ="font-size:30px"><span class="text-primary">PB</span><span style="font-size:1.2em; color : rgb(5, 5, 5)";>FY</span></p></a> <!--PBFY-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:280px; ">
+                <button class="dropbtn"><strong>Chapter 1</strong></button>
+                <div class="dropdown-content">
+                  <a href="../1/1-1.html">파이썬이란?</a>
+                  <a href="../1/1-2.html">파이썬의 특징</a>
+                  <a href="../1/1-3.html">파이썬으로 할 수 있는 것</a>
+                  <a href="../1/1-4.html">파이썬 설치하기</a>
+                  <a href="../1/1-5.html">파이썬 둘러보기</a>
+                  <a href="../1/1-6.html">파이썬과 에디터</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; " >
+                <button class="dropbtn"><strong>Chapter 2</strong></button>
+                <div class="dropdown-content">
+                  <a href="../2/2-1.html">숫자형</a>
+                  <a href="../2/2-2.html">문자열 자료형</a>
+                  <a href="../2/2-3.html">리스트 자료형</a>
+                  <a href="../2/2-4.html">튜플 자료형</a>
+                  <a href="../2/2-5.html">딕셔너리 자료형</a>
+                  <a href="../2/2-6.html">집합 자료형</a>
+                  <a href="../2/2-7.html">Bool 자료형</a>
+                  <a href="../2/2-8.html">변수</a>
+                  <a href="../2/2-9.html">2장 연습문제</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; ">
+                <button class="dropbtn"><strong>Chapter 3</strong></button>
+                <div class="dropdown-content">
+                  <a href="../3/3-1.html">if문</a>
+                  <a href="../3/3-1.html">while문</a>
+                  <a href="../3/3-1.html">for문</a>
+                  <a href="../3/3-1.html">3장 연습문제</a> 
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" style="margin-left:20px; ">
+                <button class="dropbtn"><strong>Chapter 4</strong></button>
+                <div class="dropdown-content">
+                  <a href="../4/4-1.html">함수</a>
+                  <a href="../4/4-2.html">사용자 입출력</a>
+                  <a href="../4/4-3.html">파일 읽고 쓰기</a>
+                  <a href="../4/4-4.html">4장 연습문제</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 5</strong></button>
+              <div class="dropdown-content">
+                <a href="./5-1.html">클래스</a>
+                <a href="./5-2.html">모듈</a>
+                <a href="./5-3.html">패키지</a>
+                <a href="./5-4.html">예외처리</a>
+                <a href="./5-5.html">내장함수</a>
+                <a href="./5-6.html">라이브러리</a>
+                <a href="./5-7.html">5장 연습문제</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 6</strong></button>
+              <div class="dropdown-content">
+                <a href="../6/6-1.html">내가 프로그램을?</a>
+                <a href="../6/6-2.html">3과 5의 배수합</a>
+                <a href="../6/6-3.html">게시판 페이징</a>
+                <a href="../6/6-4.html">간단한 메모장</a>
+                <a href="../6/6-5.html">탭 > 공백4개</a>
+                <a href="../6/6-6.html">하위 디렉터리 검색</a>
+                <a href="../6/6-7.html">파이보</a>
+                <a href="../6/6-8.html">코딩도장</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 7</strong></button>
+              <div class="dropdown-content">
+                <a href="../7/7-1.html">정규표현식(1)</a>
+                <a href="../7/7-2.html">정규표현식(2)</a>
+                <a href="../7/7-3.html">정규표현식(3)</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="margin-left:20px; ">
+              <button class="dropbtn"><strong>Chapter 8</strong></button>
+              <div class="dropdown-content">
+                <a href="../8/8-1.html">종합 문제</a>
+                <a href="../8/8-2.html">풀이</a>
+                <a href="../8/8-3.html">공부를 마치며</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" style="margin-top:16px;">
+            <div style="margin-left:20px; ">
+              <a class="nav-link" href="../re_site.html"><p style = " font-size:1.0em;  "><b>참고사이트</b></p></a>
+            </div>
+          </li>
+          <li class="nav-item" style="margin-top:16px;">
+              <a class="nav-link" href="../LP.html"><p style = " font-size:1.0em;  "><b>학습플래닛</b></p></a>
+          </li>
+          </ul>
+        </div> 
+      </div> 
+    </nav>
+    <div style="height:4px; background-color: #326996"></div>
+  </header>   <!-- 파이썬 사진-->
+
+  <div class="page-section_12 bg-light " style="margin-top:10px; ">
+    <div class="col-sm-2 " style="float: left;" >
+      <div class="row">
+          <div style="margin:0; font-size: 12px;">
+
+              <!-- 1장 파트 -->
+              <a class="list-group-item active"><strong>01장</strong></a>
+              <a class="list-group-item " href="../1/1-1.html"> &nbsp;&nbsp;&nbsp;01-1 파이썬이란?</a>
+              <a class="list-group-item " href="../1/1-2.html"> &nbsp;&nbsp;&nbsp;01-2 파이썬의 특징</a> 
+              <a class="list-group-item " href="../1/1-3.html"> &nbsp;&nbsp;&nbsp;01-3 파이썬으로 할 수 있는 것</a>
+              <a class="list-group-item " href="../1/1-4.html"> &nbsp;&nbsp;&nbsp;01-4 파이썬 설치하기</a>
+              <a class="list-group-item " href="../1/1-5.html"> &nbsp;&nbsp;&nbsp;01-5 파이썬 둘러보기</a>
+              <a class="list-group-item " href="../1/1-6.html"> &nbsp;&nbsp;&nbsp;01-6 파이썬과 에디터</a>
+              <!-- 2장 파트 -->
+              <a class="list-group-item active"><strong>02장</strong></a>
+              <a class="list-group-item " href="../2/2-1.html"> &nbsp;&nbsp;&nbsp;02-1 숫자형</a>
+              <a class="list-group-item " href="../2/2-2.html"> &nbsp;&nbsp;&nbsp;02-2 문자열 자료형</a> 
+              <a class="list-group-item " href="../2/2-3.html"> &nbsp;&nbsp;&nbsp;02-3 리스트 자료형</a>
+              <a class="list-group-item " href="../2/2-4.html"> &nbsp;&nbsp;&nbsp;02-4 튜플 자료형</a>
+              <a class="list-group-item " href="../2/2-5.html"> &nbsp;&nbsp;&nbsp;02-5 딕셔너리 자료형</a>
+              <a class="list-group-item " href="../2/2-6.html"> &nbsp;&nbsp;&nbsp;02-6 집합 자료형</a>
+              <a class="list-group-item " href="../2/2-7.html"> &nbsp;&nbsp;&nbsp;02-7 Bool 자료형</a>
+              <a class="list-group-item " href="../2/2-8.html"> &nbsp;&nbsp;&nbsp;02-8 변수</a>
+              <a class="list-group-item " href="../2/2-9.html"> &nbsp;&nbsp;&nbsp;-----2장 연습문제-----</a>
+
+              <!-- 3장 파트 -->
+              <a class="list-group-item active"><strong>03장</strong></a>
+              <a class="list-group-item " href="../3/3-1.html"> &nbsp;&nbsp;&nbsp;03-1 if문</a>
+              <a class="list-group-item " href="../3/3-2.html"> &nbsp;&nbsp;&nbsp;03-2 while문</a> 
+              <a class="list-group-item " href="../3/3-3.html"> &nbsp;&nbsp;&nbsp;03-3 for문</a>
+              <a class="list-group-item " href="../3/3-4.html"> &nbsp;&nbsp;&nbsp;-----3장 연습문제-----</a>
+
+              <!-- 4장 파트 -->
+              <a class="list-group-item active"><strong>04장</strong></a>
+              <a class="list-group-item " href="../4/4-1.html"> &nbsp;&nbsp;&nbsp;04-1 함수</a> 
+              <a class="list-group-item " href="../4/4-2.html"> &nbsp;&nbsp;&nbsp;04-2 사용자 입출력</a>
+              <a class="list-group-item " href="../4/4-3.html"> &nbsp;&nbsp;&nbsp;04-3 파일 읽고쓰기</a>
+              <a class="list-group-item " href="../4/4-4.html"> &nbsp;&nbsp;&nbsp;-----4장 연습문제-----</a>
+
+               <!-- 5장 파트 -->
+               <a class="list-group-item active"><strong>05장</strong></a>
+               <a class="list-group-item " href="./5-1.html"> &nbsp;&nbsp;&nbsp;05-1 클래스</a> 
+               <a class="list-group-item " href="./5-2.html"> &nbsp;&nbsp;&nbsp;05-2 모듈</a>
+               <a class="list-group-item " href="./5-3.html"> &nbsp;&nbsp;&nbsp;05-3 패키지</a>
+               <a class="list-group-item " href="./5-4.html"> &nbsp;&nbsp;&nbsp;05-4 예외처리</a>
+               <a class="list-group-item " href="./5-5.html"> &nbsp;&nbsp;&nbsp;05-5 내장함수</a>
+               <a class="list-group-item " href="./5-6.html"> &nbsp;&nbsp;&nbsp;05-6 라이브러리</a>
+               <a href="javascript:page(17684)" class="list-group-item "> &nbsp;&nbsp;&nbsp;-----5장 연습문제-----</a>
+             
+                <!-- 6장 파트 -->
+                <a class="list-group-item active"><strong>06장</strong></a>
+                <a class="list-group-item " href="../6/6-1.html"> &nbsp;&nbsp;&nbsp;06-1 내가 프로그램을?</a> 
+                <a class="list-group-item " href="../6/6-2.html"> &nbsp;&nbsp;&nbsp;06-2 3과 5의 배수합</a>
+                <a class="list-group-item " href="../6/6-3.html"> &nbsp;&nbsp;&nbsp;06-3 게시판 페이징</a>
+                <a class="list-group-item " href="../6/6-4.html"> &nbsp;&nbsp;&nbsp;06-4 간단한 메모장</a>
+                <a class="list-group-item " href="../6/6-5.html"> &nbsp;&nbsp;&nbsp;06-5 탭 > 공백4개</a>
+                <a class="list-group-item " href="../6/6-6.html"> &nbsp;&nbsp;&nbsp;06-6 하위 디렉터리 검색</a>
+                <a class="list-group-item " href="../6/6-7.html"> &nbsp;&nbsp;&nbsp;06-7 파이보</a>
+                <a class="list-group-item " href="../6/6-8.html"> &nbsp;&nbsp;&nbsp;06-8 코딩도장</a>
+
+                <!-- 7장 파트 -->
+                <a class="list-group-item active"><strong>07장</strong></a>
+                <a class="list-group-item " href="../7/7-1.html"> &nbsp;&nbsp;&nbsp;07-1 정규표현식(1)</a> 
+                <a class="list-group-item " href="../7/7-2.html"> &nbsp;&nbsp;&nbsp;07-2 정규표현식(2)</a>
+                <a class="list-group-item " href="../7/7-3.html">&nbsp;&nbsp;&nbsp;07-3 정규표현식(3)</a>
+
+                <!-- 8,9,10 -->
+                <a class="list-group-item active"><strong>마지막장</strong></a>
+                <a class="list-group-item " href="../8/8-1.html"> &nbsp;&nbsp;&nbsp;종합문제</a>
+                <a class="list-group-item " href="../8/8-2.html"> &nbsp;&nbsp;&nbsp;풀이</a>
+                <a class="list-group-item " href="../8/8-3.html"> &nbsp;&nbsp;&nbsp;마치며</a>
+              
+      <input type="hidden" name="request_mobile" id="request_mobile" value="0" />
+
+      <form id="search_form" action="https://wikidocs.net/book/search/1" method="post">
+          <input type="hidden" name="keyword" id="keyword">
+      </form>
+  </div>
+</div>
+</div>
+
+<div class="page-section_12 bg-light">
+  <div class="container">
+<div class="col-lg-12 " style="float:left;">
+    <h1 class="page-subject" style="padding-top: 30px;">
+      05-4 예외 처리<hr>
+    
+</h1>
+
+<div class="page-content tex2jax_process">
+    <p>프로그램을 만들다 보면 수없이 많은 오류를 만나게 된다. 물론 오류가 발생하는 이유는 프로그램이 잘못 동작하는 것을 막기 위한 파이썬의 배려이다. 하지만 때때로 이러한 오류를 무시하고 싶을 때도 있다. 이를 위해 파이썬은 try, except를 사용해서 예외적으로 오류를 처리할 수 있게 해준다.</p>
+
+<h2 id="_1">오류는 어떤 때 발생하는가?</h2>
+<p>오류를 처리하는 방법을 알기 전에 어떤 상황에서 오류가 발생하는지 한번 알아보자. 오타를 입력했을 때 발생하는 구문 오류 같은 것이 아닌 실제 프로그램에서 자주 발생하는 오류를 중심으로 살펴본다.</p>
+<p>먼저 디렉터리 안에 없는 파일을 열려고 시도했을 때 발생하는 오류이다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">&gt;&gt;&gt; f = open(&quot;나없는파일&quot;, 'r')
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+FileNotFoundError: [Errno 2] No such file or directory: '나없는파일'</code></pre></div>
+
+<p>위 예에서 볼 수 있듯이 없는 파일을 열려고 시도하면 FileNotFoundError 오류가 발생한다.</p>
+<p>이번에는 0으로 다른 숫자를 나누는 경우를 생각해 보자. 이 역시 자주 발생하는 오류이다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">&gt;&gt;&gt; 4 / 0
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero</code></pre></div>
+
+<p>4를 0으로 나누려니까 ZeroDivisionError 오류가 발생한다.</p>
+<p>마지막으로 한 가지 예를 더 들어 보자. 다음 오류는 정말 빈번하게 일어난다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">&gt;&gt;&gt; a = [1,2,3]
+&gt;&gt;&gt; a[4]
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+IndexError: list index out of range</code></pre></div>
+
+<p>a는 리스트 [1, 2, 3]인데 a[4]는 a 리스트에서 얻을 수 없는 값이다. 따라서 IndexError 오류가 발생한다. 파이썬은 이런 오류가 발생하면 프로그램을 중단하고 오류 메시지를 보여 준다.</p>
+<h2 id="_2">오류 예외 처리 기법</h2>
+<p>자, 이제 유연한 프로그래밍을 위한 오류 처리 기법에 대해 살펴보자.</p>
+<h3 id="try-except">try, except문</h3>
+<p>다음은 오류 처리를 위한 try, except문의 기본 구조이다. </p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except [발생 오류[as 오류 메시지 변수]]:
+    ...</code></pre></div>
+
+<p>try 블록 수행 중 오류가 발생하면 except 블록이 수행된다. 하지만 try 블록에서 오류가 발생하지 않는다면 except 블록은 수행되지 않는다.</p>
+<p>except 구문을 자세히 살펴보자.</p>
+<blockquote>
+<p>except [발생 오류 [as 오류 메시지 변수]]:</p>
+</blockquote>
+<p>위 구문을 보면 [ ] 기호를 사용하는데, 이 기호는 괄호 안의 내용을 생략할 수 있다는 관례 표기법이다. 즉 except 구문은 다음 3가지 방법으로 사용할 수 있다.</p>
+<p><strong>1. try, except만 쓰는 방법</strong></p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except:
+    ...</code></pre></div>
+
+<p>이 경우는 오류 종류에 상관없이 오류가 발생하면 except 블록을 수행한다.</p>
+<p><strong>2. 발생 오류만 포함한 except문</strong></p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except 발생 오류:
+    ...</code></pre></div>
+
+<p>이 경우는 오류가 발생했을 때 except문에 미리 정해 놓은 오류 이름과 일치할 때만 except 블록을 수행한다는 뜻이다.</p>
+<p><strong>3. 발생 오류와 오류 메시지 변수까지 포함한 except문</strong></p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except 발생 오류 as 오류 메시지 변수:
+    ...</code></pre></div>
+
+<p>이 경우는 두 번째 경우에서 오류 메시지의 내용까지 알고 싶을 때 사용하는 방법이다.</p>
+<p>이 방법의 예를 들어 보면 다음과 같다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    4 / 0
+except ZeroDivisionError as e:
+    print(e)</code></pre></div>
+
+<p>위처럼 4를 0으로 나누려고 하면 ZeroDivisionError가 발생하여 except 블록이 실행되고 변수 e에 담기는 오류 메시지를 다음과 같이 출력한다.</p>
+<blockquote>
+<p>결과값: division by zero</p>
+</blockquote>
+<h3 id="try-finally">try .. finally</h3>
+<p>try문에는 finally절을 사용할 수 있다. finally절은 try문 수행 도중 예외 발생 여부에 상관없이 항상 수행된다. 보통 finally절은 사용한 리소스를 close해야 할 때에 많이 사용한다.</p>
+<p>다음 예를 보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">f = open('foo.txt', 'w')
+try:
+    # 무언가를 수행한다.
+finally:
+    f.close()</code></pre></div>
+
+<p>foo.txt 파일을 쓰기 모드로 연 후에 try문을 수행한 후 예외 발생 여부와 상관없이 finally절에서 <code>f.close()</code>로 열린 파일을 닫을 수 있다.</p>
+<h3 id="_3">여러개의 오류처리하기</h3>
+<p>try문 안에서 여러 개의 오류를 처리하기 위해 다음 구문을 사용한다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except 발생 오류1:
+   ... 
+except 발생 오류2:
+   ...</code></pre></div>
+
+<p>즉 0으로 나누는 오류와 인덱싱 오류를 다음과 같이 처리할 수 있다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    a = [1,2]
+    print(a[3])
+    4/0
+except ZeroDivisionError:
+    print(&quot;0으로 나눌 수 없습니다.&quot;)
+except IndexError:
+    print(&quot;인덱싱 할 수 없습니다.&quot;)</code></pre></div>
+
+<p>a는 2개의 요솟값을 가지고 있기 때문에 <code>a[3]</code>는 <code>IndexError</code>를 발생시키므로 "인덱싱할 수 없습니다."라는 문자열이 출력될 것이다. 인덱싱 오류가 먼저 발생했으므로 <code>4/0</code>으로 발생되는 <code>ZeroDivisionError</code> 오류는 발생하지 않았다.</p>
+<p>앞에서 알아본 것과 마찬가지로 오류 메시지도 다음과 같이 가져올 수 있다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    a = [1,2]
+    print(a[3])
+    4/0
+except ZeroDivisionError as e:
+    print(e)
+except IndexError as e:
+    print(e)</code></pre></div>
+
+<p>프로그램을 실행하면 "list index out of range" 오류 메시지가 출력될 것이다.</p>
+<p>다음과 같이 <code>ZerroDivisionError</code>와 <code>IndexError</code>를 함께 처리할 수도 있다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    a = [1,2]
+    print(a[3])
+    4/0
+except (ZeroDivisionError, IndexError) as e:
+    print(e)</code></pre></div>
+
+<p>2개 이상의 오류를 동일하게 처리하기 위해서는 위와 같이 괄호를 사용하여 함께 묶어 처리하면 된다.</p>
+<p></p><div class="tip"><p></p>
+<p><strong>try문에 else절 사용하기</strong></p>
+<p>try문에는 다음처럼 else절을 사용할 수 있다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    ...
+except [발생 오류[as 오류 메시지 변수]]:
+    ...
+else:  # 오류가 없을 경우에만 수행된다.
+    ...</code></pre></div>
+
+<p>try문 수행중 오류가 발생하면 except절이 수행되고 오류가 없으면 else절이 수행된다.</p>
+<p>다음은 try문에 else절을 활용하는 간단한 예이다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    age=int(input('나이를 입력하세요: '))
+except:
+    print('입력이 정확하지 않습니다.')
+else:
+    if age &lt;= 18:
+        print('미성년자는 출입금지입니다.')
+    else:
+        print('환영합니다.')</code></pre></div>
+
+<p>만약 '나이를 입력하세요:' 라는 질문에 숫자가 아닌 다른 값을 입력하면 오류가 발생하여 '입력이 정확하지 않습니다.'라는 문장을 출력한다. 오류가 없을 경우에만 else절이 수행된다.</p>
+<p></p></div><p></p>
+<h2 id="_4">오류 회피하기</h2>
+<p>프로그래밍을 하다 보면 특정 오류가 발생할 경우 그냥 통과시켜야 할 때가 있다. 다음 예를 보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    f = open(&quot;나없는파일&quot;, 'r')
+except FileNotFoundError:
+    pass</code></pre></div>
+
+<p>try문 안에서 FileNotFoundError가 발생할 경우에 pass를 사용하여 오류를 그냥 회피하도록 작성한 예제이다.</p>
+<h2 id="_5">오류 일부러 발생시키기</h2>
+<p>이상하게 들리겠지만 프로그래밍을 하다 보면 종종 오류를 일부러 발생시켜야 할 경우도 생긴다. 파이썬은 raise 명령어를 사용해 오류를 강제로 발생시킬 수 있다.</p>
+<p>예를 들어 Bird 클래스를 상속받는 자식 클래스는 반드시 fly라는 함수를 구현하도록 만들고 싶은 경우(강제로 그렇게 하고 싶은 경우)가 있을 수 있다. 다음 예를 보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">class Bird:
+    def fly(self):
+        raise NotImplementedError</code></pre></div>
+
+<p>위 예제는 Bird 클래스를 상속받는 자식 클래스는 반드시 fly 함수를 구현해야 한다는 의지를 보여 준다. 만약 자식 클래스가 fly 함수를 구현하지 않은 상태로 fly 함수를 호출한다면 어떻게 될까?</p>
+<blockquote>
+<p>※ NotImplementedError는 파이썬 내장 오류로, 꼭 작성해야 하는 부분이 구현되지 않았을 경우 일부러 오류를 일으키기 위해 사용한다.</p>
+</blockquote>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">class Eagle(Bird):
+    pass
+
+eagle = Eagle()
+eagle.fly()</code></pre></div>
+
+<p>Eagle 클래스는 Bird 클래스를 상속받는다. 그런데 Eagle 클래스에서 fly 함수를 구현하지 않았기 때문에 Bird 클래스의 fly 함수가 호출된다. 그리고 raise문에 의해 NotImplemented Error가 발생할 것이다.</p>
+<blockquote>
+<p>※ 상속받는 클래스에서 함수를 재구현하는 것을 메서드 오버라이딩이라고 부른다.</p>
+</blockquote>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="no-highlight">Traceback (most recent call last):
+  File &quot;...&quot;, line 33, in &lt;module&gt;
+    eagle.fly()
+  File &quot;...&quot;, line 26, in fly
+    raise NotImplementedError
+NotImplementedError</code></pre></div>
+
+<p>NotImplementedError가 발생되지 않게 하려면 다음과 같이 Eagle 클래스에 fly 함수를 반드시 구현해야 한다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">class Eagle(Bird):
+    def fly(self):
+        print(&quot;very fast&quot;)
+
+eagle = Eagle()
+eagle.fly()</code></pre></div>
+
+<p>위 예처럼 fly 함수를 구현한 후 프로그램을 실행하면 오류 없이 다음 문장이 출력된다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">very fast</code></pre></div>
+
+<h2 id="_6">예외 만들기</h2>
+<p>프로그램 수행 도중 특수한 경우에만 예외 처리를 하기 위해서 종종 예외를 만들어서 사용한다. 직접 예외를 만들어 보자. 예외는 다음과 같이 파이썬 내장 클래스인 Exception 클래스를 상속하여 만들 수 있다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">class MyError(Exception):
+    pass</code></pre></div>
+
+<p>그리고 별명을 출력해 주는 함수를 다음과 같이 작성한다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">def say_nick(nick):
+    if nick == '바보':
+        raise MyError()
+    print(nick)</code></pre></div>
+
+<p>그리고 다음과 같이 say_nick 함수를 호출해 보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">say_nick(&quot;천사&quot;)
+say_nick(&quot;바보&quot;)</code></pre></div>
+
+<p>저장한 뒤 프로그램을 실행해 보면 다음과 같이 "천사"가 한 번 출력된 후 MyError가 발생한다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">천사
+Traceback (most recent call last):
+  File &quot;...&quot;, line 11, in &lt;module&gt;
+    say_nick(&quot;바보&quot;)
+  File &quot;...&quot;, line 7, in say_nick
+    raise MyError()
+__main__.MyError</code></pre></div>
+
+<p>이번에는 예외 처리 기법을 사용하여 MyError 발생을 예외 처리해 보자.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    say_nick(&quot;천사&quot;)
+    say_nick(&quot;바보&quot;)
+except MyError:
+    print(&quot;허용되지 않는 별명입니다.&quot;)</code></pre></div>
+
+<p>프로그램을 실행하면 다음과 같이 출력된다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code>천사
+허용되지 않는 별명입니다.</code></pre></div>
+
+<p>만약 오류 메시지를 사용하고 싶다면 다음처럼 예외 처리를 하면 된다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">try:
+    say_nick(&quot;천사&quot;)
+    say_nick(&quot;바보&quot;)
+except MyError as e:
+    print(e)</code></pre></div>
+
+<p>하지만 프로그램을 실행해 보면 <code>print(e)</code>로 오류 메시지가 출력되지 않는 것을 확인할 수 있다. 오류 메시지를 출력했을 때 오류 메시지가 보이게 하려면 오류 클래스에 다음과 같은 <code>__str__</code> 메서드를 구현해야 한다. <code>__str__</code> 메서드는 print(e)처럼 오류 메시지를 print문으로 출력할 경우에 호출되는 메서드이다.</p>
+<div style="border:1px dotted; padding:5px;">
+<pre><code class="python">class MyError(Exception):
+    def __str__(self):
+        return &quot;허용되지 않는 별명입니다.&quot;</code></pre></div>
+
+<p>프로그램을 다시 실행해 보면 "허용되지 않는 별명입니다."라는 오류메시지가 출력되는 것을 확인할 수 있다.</p>
+</div>
+        
+      
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>DEVELOPER INFORMATION<hr></h5>
+        </div>
+       </div>
+      <p >&nbsp;&nbsp;&nbsp;NAME : HYEONGDALKIM - HEEGYULEE - HYEONGJONGSEO<br>&nbsp;&nbsp;
+        DAEJEON_UNIVERSITY - Information and Communication Electronics<br>
+        &nbsp;&nbsp;&nbsp;COURSE : ChulHongKwon Professor's Capstone Design  </p>
+    </div>
+  </footer>
+  
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+<script src="assets/vendor/wow/wow.min.js"></script>
+
+<script src="assets/js/theme.js"></script>
+  
+
+</body>
+</html>

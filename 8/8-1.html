@@ -228,74 +228,296 @@
   <div class="container">
 <div class="col-lg-12 " style="float:left;">
     <h1 class="page-subject" style="padding-top: 30px;">
-      
-       07-1 정규 표현식 살펴보기
-</h1><hr>
-
-<div class="page-content tex2jax_process">
-    <p>정규 표현식(Regular Expressions)은 복잡한 문자열을 처리할 때 사용하는 기법으로, 파이썬만의 고유 문법이 아니라 문자열을 처리하는 모든 곳에서 사용한다. 정규 표현식을 배우는 것은 파이썬을 배우는 것과는 또 다른 영역의 과제이다.</p>
-<blockquote>
-<p>※ 정규 표현식은 줄여서 간단히 "정규식"이라고도 말한다.</p>
-</blockquote>
-<div style="border: 2px solid black; padding: 5px;">
-<h2 id="_1">정규 표현식은 왜 필요한가?</h2>
-<p>다음과 같은 문제가 주어졌다고 가정해 보자.</p>
-<pre><code class="no-highlight">주민등록번호를 포함하고 있는 텍스트가 있다. 이 텍스트에 포함된 모든 주민등록번호의 뒷자리를 * 문자로 변경해 보자.
-</code></pre>
-
-<p>우선 정규식을 전혀 모르면 다음과 같은 순서로 프로그램을 작성해야 할 것이다.</p>
-<ol>
-<li>전체 텍스트를 공백 문자로 나눈다(split).</li>
-<li>나뉜 단어가 주민등록번호 형식인지 조사한다.</li>
-<li>단어가 주민등록번호 형식이라면 뒷자리를 <code>*</code>로 변환한다.</li>
-<li>나뉜 단어를 다시 조립한다.</li>
-</ol>
-<p>이를 구현한 코드는 아마도 다음과 같을 것이다.</p>
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="python">data = &quot;&quot;&quot;
-park 800905-1049118
-kim  700905-1059119
-&quot;&quot;&quot;
-
-result = []
-for line in data.split(&quot;\n&quot;):
-    word_result = []
-    for word in line.split(&quot; &quot;):
-        if len(word) == 14 and word[:6].isdigit() and word[7:].isdigit():
-            word = word[:6] + &quot;-&quot; + &quot;*******&quot;
-        word_result.append(word)
-    result.append(&quot; &quot;.join(word_result))
-print(&quot;\n&quot;.join(result))
-</code></pre></div>
-
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="no-highlight">결과값:
-park 800905-*******
-kim  700905-*******
-</code></pre></div>
-
-<p>반면에 정규식을 사용하면 다음처럼 훨씬 간편하고 직관적인 코드를 작성할 수 있다. 아직 정규식 사용 방법을 배우지 않았으니 눈으로만 살펴보자.</p>
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="python">import re 
-
-data = &quot;&quot;&quot;
-park 800905-1049118
-kim  700905-1059119
-&quot;&quot;&quot;
-
-pat = re.compile(&quot;(\d{6})[-]\d{7}&quot;)
-print(pat.sub(&quot;\g&lt;1&gt;-*******&quot;, data))
-</code></pre></div>
-
-<div style="border:1px dotted; padding:5px;">
-<pre><code class="no-highlight">결과값:
-park 800905-*******
-kim  700905-*******
-</code></pre></div>
-
-<p>정규 표현식을 사용하면 이렇게 간단한 예제에서도 코드가 상당히 간결해진다. 만약 찾으려는 문자열 또는 바꾸어야 할 문자열의 규칙이 매우 복잡하다면 정규식의 효용은 더 커지게 된다.</p>
-<p>이제부터 정규 표현식의 기초부터 심화 부분까지 차근차근 알아보자.</p>
-</div>
+      08장 종합문제<hr>
+    
+    </h1>
+    
+    <div class="page-content tex2jax_process">
+        <p>파이썬은 웹, GUI, 네트워크, 딥러닝 등 상당히 많은 일을 할 수 있는 언어이다. 여러분이 지금까지 배운 내용을 충분히 숙지했다면 이제 이들을 향해 첫발을 내디딜 준비를 마친 것이다. 하지만 그전에 여기에 준비한 문제들을 풀어 보면서 여러분이 얼마나 파이썬에 익숙해졌는지 점검해 보도록 하자.</p>
+    <p>이곳에 준비한 문제들은 조금 어려울 수 있다. 하지만 파이썬과 함께라면 이 문제들을 해결하는 과정 역시 또 하나의 즐거움이라는 것을 분명 느끼게 될 것이다.</p>
+    <p>그럼 아무쪼록 즐거운 시간이 되기를 바란다. Happy Python!!</p>
+    <p><em>(종합문제 풀이 : <a href="https://wikidocs.net/12769#08">https://wikidocs.net/12769#08</a>)</em></p>
+    <h2 id="q1">Q1 문자열 바꾸기</h2>
+    <p>다음과 같은 문자열이 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">a:b:c:d</code></pre></div>
+    
+    <p>문자열의 split와 join 함수를 사용하여 위 문자열을 다음과 같이 고치시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">a#b#c#d</code></pre></div>
+    
+    <h2 id="q2">Q2 딕셔너리 값 추출하기</h2>
+    <p>다음은 딕셔너리의 a에서 'C'라는 key에 해당하는 value를 출력하는 프로그램이다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = {'A':90, 'B':80}
+    &gt;&gt;&gt; a['C']
+    Traceback (most recent call last):
+      File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+    KeyError: 'C'</code></pre></div>
+    
+    <p>a 딕셔너리에는 'C'라는 key가 없으므로 위와 같은 오류가 발생한다. 'C'에 해당하는 key 값이 없을 경우 오류 대신 70을 얻을 수 있도록 수정하시오.</p>
+    <h2 id="q3-extend">Q3 리스트의 더하기와 extend 함수</h2>
+    <p>다음과 같은 리스트 a가 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]</code></pre></div>
+    
+    <p>리스트 a에 [4, 5]를 + 기호를 사용하여 더한 결과는 다음과 같다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+    &gt;&gt;&gt; a = a + [4,5]
+    &gt;&gt;&gt; a
+    [1, 2, 3, 4, 5]</code></pre></div>
+    
+    <p>리스트 a에 [4,5]를 extend를 사용하여 더한 결과는 다음과 같다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; a = [1, 2, 3]
+    &gt;&gt;&gt; a.extend([4, 5])
+    &gt;&gt;&gt; a
+    [1, 2, 3, 4, 5]</code></pre></div>
+    
+    <p><code>+</code> 기호를 사용하여 더한 것과 extend한 것의 차이점이 있을까? 있다면 그 차이점을 설명하시오.</p>
+    <h2 id="q4">Q4 리스트 총합 구하기</h2>
+    <p>다음은 A학급 학생의 점수를 나타내는 리스트이다. 다음 리스트에서 50점 이상 점수의 총합을 구하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">A = [20, 55, 67, 82, 45, 33, 90, 87, 100, 25]</code></pre></div>
+    
+    <h2 id="q5">Q5 피보나치 함수</h2>
+    <p>첫 번째 항의 값이 0이고 두 번째 항의 값이 1일 때, 이후에 이어지는 항은 이전의 두 항을 더한 값으로 이루어지는 수열을 피보나치 수열이라고 한다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">0, 1, 1, 2, 3, 5, 8, 13, ...</code></pre></div>
+    
+    <p>입력을 정수 n으로 받았을 때, n 이하까지의 피보나치 수열을 출력하는 함수를 작성해 보자.</p>
+    <h2 id="q6">Q6 숫자의 총합 구하기</h2>
+    <p>사용자로부터 다음과 같은 숫자를 입력받아 입력받은 숫자의 총합을 구하는 프로그램을 작성하시오. (단 숫자는 콤마로 구분하여 입력한다.)</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">65,45,2,3,45,8</code></pre></div>
+    
+    <h2 id="q7">Q7 한 줄 구구단</h2>
+    <p>사용자로부터 2~9의 숫자 중 하나를 입력받아 해당 숫자의 구구단을 한 줄로 출력하는 프로그램을 작성하시오.</p>
+    <p>실행 예)</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">구구단을 출력할 숫자를 입력하세요(2~9): 2
+    2 4 6 8 10 12 14 16 18</code></pre></div>
+    
+    <h2 id="q8">Q8 역순 저장</h2>
+    <p>다음과 같은 내용의 파일 abc.txt가 있다.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">AAA
+    BBB
+    CCC
+    DDD
+    EEE</code></pre></div>
+    
+    <p>이 파일의 내용을 다음과 같이 역순으로 바꾸어 저장하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">EEE
+    DDD
+    CCC
+    BBB
+    AAA</code></pre></div>
+    
+    <h2 id="q9">Q9 평균값 구하기</h2>
+    <p>다음과 같이 총 10줄로 이루어진 sample.txt 파일이 있다. sample.txt 파일의 숫자 값을 모두 읽어 총합과 평균 값을 구한 후 평균 값을 result.txt 파일에 쓰는 프로그램을 작성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">70
+    60
+    55
+    75
+    95
+    90
+    80
+    80
+    85
+    100</code></pre></div>
+    
+    <h2 id="q10">Q10 사칙연산 계산기</h2>
+    <p>다음과 같이 동작하는 클래스 Calculator를 작성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; cal1 = Calculator([1,2,3,4,5])
+    &gt;&gt;&gt; cal1.sum() # 합계
+    15
+    &gt;&gt;&gt; cal1.avg() # 평균
+    3.0
+    &gt;&gt;&gt; cal2 = Calculator([6,7,8,9,10])
+    &gt;&gt;&gt; cal2.sum() # 합계
+    40
+    &gt;&gt;&gt; cal2.avg() # 평균
+    8.0</code></pre></div>
+    
+    <h2 id="q11">Q11 모듈 사용 방법</h2>
+    <p><code>C:\doit</code> 디렉터리에 mymod.py 파이썬 모듈이 있다고 가정해 보자. 명령 프롬프트 창에서 파이썬 셸을 열어 이 모듈을 import해서 사용할 수 있는 방법을 모두 기술하시오. (즉 다음과 같이 <code>import mymod</code>를 수행할 때 오류가 없어야 한다.)</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; import mymod
+    &gt;&gt;&gt;</code></pre></div>
+    
+    <h2 id="q12">Q12 오류와 예외 처리</h2>
+    <p>다음 코드의 실행 결과를 예측하고 그 이유에 대해 설명하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">result = 0
+    
+    try:
+        [1, 2, 3][3]
+        &quot;a&quot;+1
+        4 / 0
+    except TypeError:
+        result += 1
+    except ZeroDivisionError:
+        result += 2
+    except IndexError:
+        result += 3
+    finally:
+        result += 4
+    
+    print(result)</code></pre></div>
+    
+    <h2 id="q13-dashinsert">Q13 DashInsert 함수</h2>
+    <p>DashInsert 함수는 숫자로 구성된 문자열을 입력받은 뒤 문자열 안에서 홀수가 연속되면 두 수 사이에 <code>-</code> 를 추가하고, 짝수가 연속되면 <code>*</code> 를 추가하는 기능을 갖고 있다. DashInsert 함수를 완성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="no-highlight">입력 예시: 4546793
+    출력 예시: 454*67-9-3</code></pre></div>
+    
+    <h2 id="q14">Q14 문자열 압축하기</h2>
+    <p>문자열을 입력받아 같은 문자가 연속적으로 반복되는 경우에 그 반복 횟수를 표시해 문자열을 압축하여 표시하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="no-highlight">입력 예시: aaabbcccccca
+    출력 예시: a3b2c6a1</code></pre></div>
+    
+    <h2 id="q15-duplicate-numbers">Q15 Duplicate Numbers</h2>
+    <p>0~9의 문자로 된 숫자를 입력받았을 때, 이 입력값이 0~9의 모든 숫자를 각각 한 번씩만 사용한 것인지 확인하는 함수를 작성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="no-highlight">입력 예시: 0123456789 01234 01234567890 6789012345 012322456789
+    출력 예시: True False False True False</code></pre></div>
+    
+    <h2 id="q16">Q16 모스 부호 해독</h2>
+    <p>문자열 형식으로 입력받은 모스 부호(dot:<code>.</code> dash:<code>-</code>)를 해독하여 영어 문장으로 출력하는 프로그램을 작성하시오.</p>
+    <ul>
+    <li>글자와 글자 사이는 공백 1개, 단어와 단어 사이는 공백 2개로 구분한다.</li>
+    <li>예를 들어 다음 모스 부호는 "HE SLEEPS EARLY"로 해석해야 한다.</li>
+    </ul>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="no-highlight">.... .  ... .-.. . . .--. ...  . .- .-. .-.. -.--</code></pre></div>
+    
+    <p><em>모스부호 규칙 표</em></p>
+    <table>
+    <thead>
+    <tr>
+    <th>문자</th>
+    <th>부호</th>
+    <th>문자</th>
+    <th>부호</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>A</td>
+    <td>.-</td>
+    <td>N</td>
+    <td>-.</td>
+    </tr>
+    <tr>
+    <td>B</td>
+    <td>-...</td>
+    <td>O</td>
+    <td>---</td>
+    </tr>
+    <tr>
+    <td>C</td>
+    <td>-.-.</td>
+    <td>P</td>
+    <td>.--.</td>
+    </tr>
+    <tr>
+    <td>D</td>
+    <td>-..</td>
+    <td>Q</td>
+    <td>--.-</td>
+    </tr>
+    <tr>
+    <td>E</td>
+    <td>.</td>
+    <td>R</td>
+    <td>.-.</td>
+    </tr>
+    <tr>
+    <td>F</td>
+    <td>..-.</td>
+    <td>S</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>G</td>
+    <td>--.</td>
+    <td>T</td>
+    <td>-</td>
+    </tr>
+    <tr>
+    <td>H</td>
+    <td>....</td>
+    <td>U</td>
+    <td>..-</td>
+    </tr>
+    <tr>
+    <td>I</td>
+    <td>..</td>
+    <td>V</td>
+    <td>...-</td>
+    </tr>
+    <tr>
+    <td>J</td>
+    <td>.---</td>
+    <td>W</td>
+    <td>.--</td>
+    </tr>
+    <tr>
+    <td>K</td>
+    <td>-.-</td>
+    <td>X</td>
+    <td>-..-</td>
+    </tr>
+    <tr>
+    <td>L</td>
+    <td>.-..</td>
+    <td>Y</td>
+    <td>-.--</td>
+    </tr>
+    <tr>
+    <td>M</td>
+    <td>--</td>
+    <td>Z</td>
+    <td>--..</td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="q17">Q17 기초 메타 문자</h2>
+    <p>다음 중 정규식 <code>a[.]{3,}b</code>과 매치되는 문자열은 무엇일까?</p>
+    <ol>
+    <li><code>acccb</code></li>
+    <li><code>a....b</code></li>
+    <li><code>aaab</code></li>
+    <li><code>a.cccb</code></li>
+    </ol>
+    <h2 id="q18">Q18 문자열 검색</h2>
+    <p>다음 코드의 결괏값은 무엇일까?</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&gt;&gt;&gt; import re
+    &gt;&gt;&gt; p = re.compile(&quot;[a-z]+&quot;)
+    &gt;&gt;&gt; m = p.search(&quot;5 python&quot;)
+    &gt;&gt;&gt; m.start() + m.end()</code></pre></div>
+    
+    <h2 id="q19">Q19 그루핑</h2>
+    <p>다음과 같은 문자열에서 휴대폰 번호 뒷자리인 숫자 4개를 ####로 바꾸는 프로그램을 정규식을 사용하여 작성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="python">&quot;&quot;&quot;
+    park 010-9999-9988
+    kim 010-9909-7789
+    lee 010-8789-7768
+    &quot;&quot;&quot;</code></pre></div>
+    
+    <h2 id="q20">Q20 전방 탐색</h2>
+    <p>다음은 이메일 주소를 나타내는 정규식이다. 이 정규식은 park@naver.com, kim@daum.net, lee@myhome.co.kr 등과 매치된다. 긍정형 전방 탐색 기법을 사용하여 .com, .net이 아닌 이메일 주소는 제외시키는 정규식을 작성하시오.</p>
+    <div style="border:1px dotted; padding:5px;">
+    <pre><code class="no-highlight">.*[@].*[.].*$</code></pre></div>
+    </div>
 </div>
 </div>
 </div>

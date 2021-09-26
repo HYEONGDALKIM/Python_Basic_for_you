@@ -1286,12 +1286,44 @@ a.text-dark:focus {
   height: 2400px;
 }
 
+.page-section_7 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 3300px;
+}
+
+.page-section_11 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 4500px;
+}
+
+.page-section_9 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 5500px;
+}
+
 .page-section_6 {
   position: relative;
   padding-top: 5px;
   padding-bottom: 50px;
   overflow: hidden;
   height: 6300px;
+}
+
+.page-section_12 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 7300px;
 }
 
 .page-section_2 {
@@ -1318,6 +1350,38 @@ a.text-dark:focus {
   overflow: hidden;
   height: 9000px;
 }
+.page-section_8 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 9500px;
+}
+
+.page-section_10 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 17000px;
+}
+
+.page-section_15 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 19600px;
+}
+
+.page-section_13 {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  height: 11300px;
+}
+
 .page-section_5 {
   position: relative;
   padding-top: 5px;
