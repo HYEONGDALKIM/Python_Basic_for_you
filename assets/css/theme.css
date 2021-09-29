@@ -2185,3 +2185,8 @@ p_1 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #b5c1ca;}
+
+
+ #floatdiv { position:fixed; width:350px; display:inline-block; right:10px; 
+  /* 창에서 오른쪽 길이 */ top:11%;  margin:0; } 
+
