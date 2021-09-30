@@ -234,7 +234,7 @@
 </h1>
 
 <div class="page-content tex2jax_process">
-<div style="border: 2px solid black; padding: 5px;">
+
 <h2 id="_1">메타문자</h2>
 <p>아직 살펴보지 않은 메타 문자에 대해서 모두 살펴보자. 여기에서 다룰 메타 문자는 앞에서 살펴본 메타 문자와 성격이 조금 다르다. 앞에서 살펴본 <code>+</code>, <code>*</code>, <code>[]</code>, <code>{}</code> 등의 메타문자는 매치가 진행될 때 현재 매치되고 있는 문자열의 위치가 변경된다(보통 소비된다고 표현한다). 하지만 이와 달리 문자열을 소비시키지 않는 메타 문자도 있다. 이번에는 이런 문자열 소비가 없는(zerowidth assertions) 메타 문자에 대해 살펴보자.</p>
 <h3 id="_2">|</h3>
@@ -311,9 +311,9 @@ None
 </code></pre></div>
 
 <p>class 단어의 앞뒤에 whitespace가 하나라도 있는 경우에는 매치가 안 되는 것을 확인할 수 있다.</p>
-</div>
+
 <br>
-<div style="border: 2px solid black; padding: 5px;">
+
 <h2 id="_5">그루핑</h2>
 <p>ABC 문자열이 계속해서 반복되는지 조사하는 정규식을 작성하고 싶다고 하자. 어떻게 해야할까? 지금까지 공부한 내용으로는 위 정규식을 작성할 수 없다. 이럴 때 필요한 것이 바로 그루핑(Grouping) 이다.</p>
 <p>위 경우는 다음처럼 그루핑을 사용하여 작성할 수 있다.</p>
@@ -439,9 +439,9 @@ park
 </code></pre></div>
 
 <p>위 예에서 볼 수 있듯이 재참조할 때에는 <code>(?P=그룹이름)</code>이라는 확장 구문을 사용해야 한다.</p>
-</div><br>
+<br>
 
-        <div style="border: 2px solid black; padding: 5px;">
+
 <h2 id="_8">전방 탐색</h2>
 <p>정규식에 막 입문한 사람들이 가장 어려워하는 것이 바로 전방 탐색(Lookahead Assertions) 확장 구문이다. 정규식 안에 이 확장 구문을 사용하면 순식간에 암호문처럼 알아보기 어렵게 바뀌기 때문이다. 하지만 이 전방 탐색이 꼭 필요한 경우가 있으며 매우 유용한 경우도 많으니 꼭 알아 두자.</p>
 <p>다음 예를 보자.</p>
@@ -503,9 +503,9 @@ http
 <div style="border:1px dotted; padding:5px;">
 <pre><code class="no-highlight">.*[.](?!bat$|exe$).*$
 </code></pre></div>
-</div>
+
 <br>
-<div style="border: 2px solid black; padding: 5px;">
+
 <h2 id="_11">문자열 바꾸기</h2>
 <p>sub 메서드를 사용하면 정규식과 매치되는 부분을 다른 문자로 쉽게 바꿀 수 있다.</p>
 <p>다음 예를 보자.</p>
@@ -582,7 +582,7 @@ http
 </code></pre></div>
 
 <p>non-greedy 문자인 <code>?</code>는 <code>*?</code>, <code>+?</code>, <code>??</code>, <code>{m,n}?</code>와 같이 사용할 수 있다. 가능한 한 가장 최소한의 반복을 수행하도록 도와주는 역할을 한다.</p>
-</div>
+
 </div>
 <div class="col-sm-2 " style="float: left;" >
   <div class="row">
@@ -652,7 +652,7 @@ http
 </div>
 </div>
 
-
+</div>
 </div>
 </div>
 
