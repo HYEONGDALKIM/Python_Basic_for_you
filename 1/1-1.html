@@ -245,6 +245,73 @@
 <p><img alt="" src="https://wikidocs.net/images/page/5/pahkey_KRRKrp.png" /> </p>
 </div>
 </div>
+
+<div class="col-sm-2 " style="float: left;" >
+  <div class="row">
+    <div id="floatdiv">
+      <div style="margin:0; font-size: 12px;">
+        <div style= "margin: 54px 60px 20px 80px;">
+        <select id="select-lang" >
+            <option value="ko-KR">한국어</option>
+        </select>
+        <button id="btn-read">시작</button>
+        <INPUT type = 'BUTTON' value='중지' style="border:solid 2px;"onclick='stop()'>
+          </div>
+        <textarea id="text" rows="30" cols="50" ></textarea>
+       </div>
+
+        <script>
+            function speak(text, opt_prop) {
+                if (typeof SpeechSynthesisUtterance === "undefined" || typeof window.speechSynthesis === "undefined") {
+                    alert("이 브라우저는 음성 합성을 지원하지 않습니다.")
+                    return
+                } 
+            
+                window.speechSynthesis.cancel() // 현재 읽고있다면 초기화
+    
+                
+                const prop = opt_prop || {}
+    
+                const speechMsg = new SpeechSynthesisUtterance()
+                speechMsg.rate = prop.rate || 0.7 // 속도: 0.1 ~ 10      
+                speechMsg.pitch = prop.pitch || 1 // 음높이: 0 ~ 2
+                speechMsg.lang = prop.lang || "ko-KR"
+                speechMsg.text = text
+                
+                // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
+                window.speechSynthesis.speak(speechMsg)
+            }
+        
+            function stop(){
+         
+                var synth = window.speechSynthesis;
+    
+                synth.pause(); 
+            }
+    
+            // 이벤트 영역
+            const selectLang = document.getElementById("select-lang")
+            const text = document.getElementById("text")
+            const btnRead = document.getElementById("btn-read")
+            btnRead.addEventListener("click", e => {
+                speak(text.value, {
+                    rate: 1,
+                    pitch: 1.2,
+                    lang: selectLang.options[selectLang.selectedIndex].value
+                })
+            })
+            
+        </script>
+         
+          
+  <input type="hidden" name="request_mobile" id="request_mobile" value="0" />
+
+  <form id="search_form" action="https://wikidocs.net/book/search/1" method="post">
+      <input type="hidden" name="keyword" id="keyword">
+  </form>
+</div>
+</div>
+</div>
 </div>
 
 
