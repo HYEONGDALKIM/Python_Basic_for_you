@@ -505,7 +505,7 @@
             <button id="btn-read">시작</button>
             <INPUT type = 'BUTTON' value='중지' style="border:solid 2px;"onclick='stop()'>
               </div>
-            <textarea id="text" rows="30" cols="50" ></textarea>
+            <textarea id="text" rows="30" cols="50"  ></textarea>
            </div>
     
             <script>
@@ -513,13 +513,10 @@
                     if (typeof SpeechSynthesisUtterance === "undefined" || typeof window.speechSynthesis === "undefined") {
                         alert("이 브라우저는 음성 합성을 지원하지 않습니다.")
                         return
-                    } 
-                
+                    }  
                     window.speechSynthesis.cancel() // 현재 읽고있다면 초기화
-        
                     
                     const prop = opt_prop || {}
-        
                     const speechMsg = new SpeechSynthesisUtterance()
                     speechMsg.rate = prop.rate || 0.7 // 속도: 0.1 ~ 10      
                     speechMsg.pitch = prop.pitch || 1 // 음높이: 0 ~ 2
@@ -533,7 +530,6 @@
                 function stop(){
              
                     var synth = window.speechSynthesis;
-        
                     synth.pause(); 
                 }
         
@@ -548,7 +544,6 @@
                         lang: selectLang.options[selectLang.selectedIndex].value
                     })
                 })
-                
             </script>
              
               
