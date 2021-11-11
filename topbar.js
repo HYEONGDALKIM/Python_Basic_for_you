@@ -9,21 +9,21 @@ document.write(`
     <div class="collapse navbar-collapse" id="navbarSupport">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <div class="dropdown" style="margin-left:280px; ">
-            <button class="dropbtn"><strong>Chapter 1</strong></button>
+          <div class="dropdown" style="margin-left:200px; ">
+            <button class="dropbtn"><strong>01장 파이썬?</strong></button>
             <div class="dropdown-content">
-              <a href="./1-1.html">파이썬이란?</a>
-              <a href="./1-2.html">파이썬의 특징</a>
-              <a href="./1-3.html">파이썬으로 할 수 있는 것</a>
-              <a href="./1-4.html">파이썬 설치하기</a>
-              <a href="./1-5.html">파이썬 둘러보기</a>
-              <a href="./1-6.html">파이썬과 에디터</a>
+              <a href="../1/1-1.html">파이썬이란?</a>
+              <a href="../1/1-2.html">파이썬의 특징</a>
+              <a href="../1/1-3.html">파이썬으로 할 수 있는 것</a>
+              <a href="../1/1-4.html">파이썬 설치하기</a>
+              <a href="../1/1-5.html">파이썬 둘러보기</a>
+              <a href="../1/1-6.html">파이썬과 에디터</a>
             </div>
           </div>
         </li>
         <li class="nav-item">
           <div class="dropdown" style="margin-left:20px; " >
-            <button class="dropbtn"><strong>Chapter 2</strong></button>
+            <button class="dropbtn"><strong>02장 자료형</strong></button>
             <div class="dropdown-content">
               <a href="../2/2-1.html">숫자형</a>
               <a href="../2/2-2.html">문자열 자료형</a>
@@ -39,7 +39,7 @@ document.write(`
         </li>
         <li class="nav-item">
           <div class="dropdown" style="margin-left:20px; ">
-            <button class="dropbtn"><strong>Chapter 3</strong></button>
+            <button class="dropbtn"><strong>03장 제어문</strong></button>
             <div class="dropdown-content">
               <a href="../3/3-1.html">if문</a>
               <a href="../3/3-2.html">while문</a>
@@ -50,7 +50,7 @@ document.write(`
         </li>
         <li class="nav-item">
           <div class="dropdown" style="margin-left:20px; ">
-            <button class="dropbtn"><strong>Chapter 4</strong></button>
+            <button class="dropbtn"><strong>04장 입출력</strong></button>
             <div class="dropdown-content">
               <a href="../4/4-1.html">함수</a>
               <a href="../4/4-2.html">사용자 입출력</a>
@@ -61,7 +61,7 @@ document.write(`
         </li>
         <li class="nav-item">
         <div class="dropdown" style="margin-left:20px; ">
-          <button class="dropbtn"><strong>Chapter 5</strong></button>
+          <button class="dropbtn"><strong>05장 클래스</strong></button>
           <div class="dropdown-content">
             <a href="../5/5-1.html">클래스</a>
             <a href="../5/5-2.html">모듈</a>
@@ -75,7 +75,7 @@ document.write(`
       </li>
       <li class="nav-item">
         <div class="dropdown" style="margin-left:20px; ">
-          <button class="dropbtn"><strong>Chapter 6</strong></button>
+          <button class="dropbtn"><strong>06장 스크립트</strong></button>
           <div class="dropdown-content">
             <a href="../6/6-1.html">내가 프로그램을?</a>
             <a href="../6/6-2.html">3과 5의 배수합</a>
@@ -90,7 +90,7 @@ document.write(`
       </li>
       <li class="nav-item">
         <div class="dropdown" style="margin-left:20px; ">
-          <button class="dropbtn"><strong>Chapter 7</strong></button>
+          <button class="dropbtn"><strong>07장 정규표현식</strong></button>
           <div class="dropdown-content">
             <a href="../7/7-1.html">정규표현식(1)</a>
             <a href="../7/7-2.html">정규표현식(2)</a>
@@ -100,7 +100,7 @@ document.write(`
       </li>
       <li class="nav-item">
         <div class="dropdown" style="margin-left:20px; ">
-          <button class="dropbtn"><strong>Chapter 8</strong></button>
+          <button class="dropbtn"><strong>08장 종합문제</strong></button>
           <div class="dropdown-content">
             <a href="../8/8-1.html">종합 문제</a>
             <a href="../8/8-2.html">풀이</a>
@@ -110,11 +110,11 @@ document.write(`
       </li>
       <li class="nav-item" style="margin-top:16px;">
         <div style="margin-left:20px; ">
-          <a class="nav-link" href="../re_site.html"><p style = " font-size:1.0em;  "><b>참고사이트</b></p></a>
+          <a class="nav-link" href="../re_site.html"><p style = " font-size:1em;  "><b>참고사이트</b></p></a>
         </div>
       </li>
       <li class="nav-item" style="margin-top:16px;">
-          <a class="nav-link" href="../LP.html"><p style = " font-size:1.0em;  "><b>학습플래닛</b></p></a>
+          <a class="nav-link" href="../LP.html"><p style = " font-size:1em;  "><b>학습플래닛</b></p></a>
       </li>
       </ul>
     </div> 
