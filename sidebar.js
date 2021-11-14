@@ -1,12 +1,12 @@
 document.write(`
 <!-- 1장 파트 --> 
 <a class="list-group-item active"><strong>01장</strong></a>
-<a class="list-group-item " href="./1-1.html"> &nbsp;&nbsp;&nbsp;01-1 파이썬이란?</a>
-<a class="list-group-item " href="./1-2.html"> &nbsp;&nbsp;&nbsp;01-2 파이썬의 특징</a> 
-<a class="list-group-item " href="./1-3.html"> &nbsp;&nbsp;&nbsp;01-3 파이썬으로 할 수 있는 것</a>
-<a class="list-group-item " href="./1-4.html"> &nbsp;&nbsp;&nbsp;01-4 파이썬 설치하기</a>
-<a class="list-group-item " href="./1-5.html"> &nbsp;&nbsp;&nbsp;01-5 파이썬 둘러보기</a>
-<a class="list-group-item " href="./1-6.html"> &nbsp;&nbsp;&nbsp;01-6 파이썬과 에디터</a>
+<a class="list-group-item " href="../1/1-1.html"> &nbsp;&nbsp;&nbsp;01-1 파이썬이란?</a>
+<a class="list-group-item " href="../1/1-2.html"> &nbsp;&nbsp;&nbsp;01-2 파이썬의 특징</a> 
+<a class="list-group-item " href="../1/1-3.html"> &nbsp;&nbsp;&nbsp;01-3 파이썬으로 할 수 있는 것</a>
+<a class="list-group-item " href="../1/1-4.html"> &nbsp;&nbsp;&nbsp;01-4 파이썬 설치하기</a>
+<a class="list-group-item " href="../1/1-5.html"> &nbsp;&nbsp;&nbsp;01-5 파이썬 둘러보기</a>
+<a class="list-group-item " href="../1/1-6.html"> &nbsp;&nbsp;&nbsp;01-6 파이썬과 에디터</a>
 <!-- 2장 파트 -->
 <a class="list-group-item active"><strong>02장</strong></a>
 <a class="list-group-item " href="../2/2-1.html"> &nbsp;&nbsp;&nbsp;02-1 숫자형</a>
