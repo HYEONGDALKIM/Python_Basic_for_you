@@ -116,7 +116,12 @@ document.write(`
       <li class="nav-item" style="margin-top:16px;">
           <a class="nav-link" href="../LP.html"><p style = " font-size:1em;  "><b>학습플래닛</b></p></a>
       </li>
+      <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+      <input name="q" type="text" placeholder="Search Google... Enter" autocomplete="off" autofocus>
+      <!-- <button type="button"><i class="fas fa-microphone"></i></button> -->
+      </form>
       </ul>
+      
     </div> 
   </div> 
 </nav>
