@@ -607,6 +607,7 @@ pre code {
 }
 
 @media (min-width: 992px) {
+
   .container {
     max-width: 960px;
   }
@@ -629,6 +630,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 @media (min-width: 576px) {
   .container,

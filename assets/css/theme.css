@@ -1044,6 +1044,7 @@ a.text-dark:focus {
   }
 }
 
+
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav {
     margin-top: 0;
@@ -2187,6 +2188,6 @@ p_1 {
 .dropdown:hover .dropbtn {background-color: #b5c1ca;}
 
 
- #floatdiv { position:fixed; width:345px; display:inline-block; right:10px; 
+ #floatdiv { position:fixed; width:17%; display:inline-block; right:10px; 
   /* 창에서 오른쪽 길이 */ top:11%;  margin:0; } 
 

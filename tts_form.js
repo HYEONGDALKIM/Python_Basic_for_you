@@ -1,6 +1,16 @@
 document.write(`
 <div class="col-sm-2 " style="float: left;" >
+<style>
+
+@media screen and (max-width: 1800px) {
+  div.floatdiv {
+    display: none;
+  }
+}
+</style>
+
   <div class="row">
+  <div class ="floatdiv">
     <div id="floatdiv">
       <div style="margin:0; font-size: 12px;">
         <div style= "margin: 54px 60px 10px 80px;">
@@ -29,7 +39,7 @@ document.write(`
       
        </div>
 
-
+</div>
 </div>
 </div>
 </div>
