@@ -197,12 +197,12 @@ print(b)          # [1,2,3,4,5] 출력
 <p>다음 코드의 결괏값은 무엇일까?</p>
 </blockquote>
 <p>결괏값으로 shirt 가 출력된다.</p>
-<ol>
+
 <li>첫 번째 조건: "wife"라는 단어는 a 문자열에 없으므로 거짓이다.</li>
 <li>두 번째 조건: "python"이라는 단어는 a 문자열에 있지만 "you" 역시 a 문자열에 있으므로 거짓이다.</li>
 <li>세 번째 조건: "shirt"라는 단어가 a 문자열에 없으므로 참이다.</li>
 <li>네 번째 조건: "need"라는 단어가 a 문자열에 있으므로 참이다.</li>
-</ol>
+
 <p>가장 먼저 참이 되는 것이 세 번째 조건이므로 "shirt"가 출력된다.</p>
 <p><strong>Q2.</strong></p>
 <blockquote>
@@ -654,14 +654,14 @@ print(result)           # 481 출력
 <p>피보나치 함수</p>
 </blockquote>
 <p>피보나치 수열은 다음과 같은 순서로 결괏값을 반환한다.</p>
-<ol>
+
 <li>fib(0) → 0 반환</li>
 <li>fib(1) → 1 반환</li>
 <li>fib(2) → fib(0) + fib(1) → 0 + 1 → 1 반환</li>
 <li>fib(3) → fib(1) + fib(2) → 1 + 1 → 2 반환</li>
 <li>fib(4) → fib(2) + fib(3) → 1 + 2 → 3 반환</li>
 <li>...</li>
-</ol>
+
 <p>n이 0일 때는 0을 반환, 1일 때는 1을 반환한다. n이 2 이상일 경우에는 이전의 두 값을 더하여 반환한다.</p>
 <p>재귀 호출을 사용하면 피보나치 함수를 다음과 같이 간단하게 작성할 수 있다.</p>
 <pre><code class="python">def fib(n):
@@ -798,12 +798,12 @@ C:\doit&gt;python
 <p>오류와 예외 처리</p>
 </blockquote>
 <p>7이 출력된다.</p>
-<ol>
+
 <li>result의 초깃값은 0이다.</li>
-<li>try문 안의 <code>[1, 2, 3][3]</code> 이라는 문장 수행 시 <code>IndexError</code>가 발생하여 <code>except IndexError:</code> 구문으로 이동하게 되어 result에 3이 더해져 3이 된다.</li>
+<li>try문 안의 <code>[1, 2, 3][3]</code> 이라는 문장 수행 시 <code>IndexError</code>가 발생하여 <code>except IndexError:</code> 구문으로 이동하게 되어 result에 3을 더한 3이 된다.</li>
 <li>최종적으로 finally 구문이 실행되어 result에 4가 더해져 7이 된다.</li>
 <li><code>print(result)</code>가 수행되어 result의 최종 값인 7이 출력된다.</li>
-</ol>
+
 <p><strong>Q13.</strong></p>
 <blockquote>
 <p>DashInsert 함수</p>
