@@ -1,6 +1,5 @@
-# HYEONGDALKIM.github.io
 
-졸업작품 Python Basics For you~
+## 졸업작품 Python Basics For you~
 
 
 ( 목적 : 파이썬공부에 도움을 줄 수 있는 파이썬기초지식들을 다른 웹 사이트 설계 )
