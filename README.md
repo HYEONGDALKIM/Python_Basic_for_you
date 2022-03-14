@@ -63,5 +63,7 @@
 		 
 		 
 		  종료!
-![image](https://user-images.githubusercontent.com/78002734/158180324-74c5f01b-107b-4962-83cb-9da3fbbb1782.png
+
+
+![image](https://user-images.githubusercontent.com/78002734/158180373-be8d5643-bf28-42f4-a429-b317bc20d4b9.png)
 
